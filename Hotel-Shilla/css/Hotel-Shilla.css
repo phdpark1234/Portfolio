@@ -1,0 +1,190 @@
+/* CSS Document */
+
+/* CSS Document */
+body, html{ background-color: #ffffff;}
+h3{float: left; font-size:40px;  color:#050000; margin:25px 0; width:100%; }
+h4{font-size:28px;  color:#050000; margin:30px 0; float: left; width:100%;}
+h5{ float:left; font-size:20px; color:#050000; margin:30px 0; width:100%;}
+p{font-size:20px; color: black; float:left;width:100%; margin-bottom:25px; }
+
+.ofh{ overflow:hidden;}
+.clear{ clear:both;}
+.container{ width:960px; margin:0 auto;}
+.red{ background-color:red !important;}
+/*상단*/
+#hd{background-color:#f1e3c4; text-align:center; position:relative /*인라인요소 가운데정렬*/}
+#hd  h1{ text-align:center; padding:10px 0;}
+#hd  .top{ overflow:hidden /* 컨텐츠보호*/;}
+#hd  .top  a{ display:block}
+#hd   h1  a{ display:block;}
+#hd   h1  img{ height:150px}
+#hd  .right{ position:absolute; top:50%; left:50%;transform: translate(27%,-642%);}
+#hd  .top  li{ float:left;  }
+#hd  .top  li + li{ border-left: 1px solid #555; }
+#hd  .right  a{ margin: 0 15px; color:#555; line-height:100%; display:block;  font-size:15px; }
+
+#hd  .top2 {} 
+#hd  .top2  a{ display:block; padding:10px 35px; font-size:1.5em; }
+#gnb { display:inline-block /*li들의 너비와 높이를 그대로 인식 */; *display:block; zoom:1}
+#gnb  a{}
+#gnb  li{ float:left}
+
+#gnb  li > a{}
+
+.top3 ul li a{ display:inline-block;width: 100px; height:100px}
+.top3 ul li {display:block; width: 100px; height:100px}
+.top3 ul {display:block}
+.top3{position: absolute; left:50%; top:50%} 
+
+p{}
+#quick{position: fixed; transform: translate(1010%,8%);top: 50%;left: 50%;
+z-index:1000 }
+#quick li + li{margin-top:8px}
+#quick li{ }
+
+#quick li a{ display:block;height: 50px; width: 50px; border-radius: 50%; background-color:#fbbd85 ;text-align:center; line-height:40px; color: black; border:4px solid #bed1f5; }
+#quick li a img{ display:block; width:100%;}
+#quick span{display: block; text-align: center; font-size:15px; color: black}
+#quick p{ color: black;}
+.renew{width:960px; margin:70px auto; overflow:hidden}
+.renew 
+.renew h4{}
+.renew p{font-size:20px; color: black; float:left;width:100% ;}
+.renew li.beautyimg a img{ width:960px; margin:70px auto;}
+.renew li.beautyUXUI a img{ text-align:center; width:100%;}
+
+
+/* 뷰티 */
+#beautyUXUI li{float: left; width:25%; text-align: center;}
+#beautyUXUI li span{ display:block; font-size:20px; color: black;}
+ #beautyUXUI li img{width:100%; display: block;width: 230px; height: 230px; border-radius: 50%;}
+/* 이미지 팝업 */
+.renew .beatyFa{box-sizing: border-box;}
+.renew .beatyFa a{ display: inline-block; width:24%;}
+.renew .beatyFa a img{ width: 100%;}
+ .renew .pop1{ width: 100%;height:100%; 
+position: fixed; top: 50%; left: 50%; transform: translate(-50%,-50%);
+ opacity: 0; z-index: -1; transition: 0.2s;}
+.renew .pop1 img{ position: absolute; top: 0; left: 0; right: 0;bottom: 0;
+margin: auto;box-shadow: 5px 5px 5px #00000080;}
+.renew .pop1 a{ display: block; width: 30px;height: 30px;
+background-color: #fff; color: #341c17; text-align: center;
+position: absolute; top: 50%; left: 50%;
+transform: translate(931%,-50%);
+line-height: 186%; z-index: 100000; border-radius: 50%;
+box-shadow: 2px 2px 10px black;font-weight: bold;}
+.renew .pop1:target{opacity: 1; z-index: 100000;}
+
+/* 파크뷰 슬라이드  */
+#Sliderwrap{ margin:0 auto; width:960px; position:relative; overflow:hidden;}
+#Sliderwrap h3{}
+#Sliderwrap ul{ margin-left:-960px; width:100000px  ;overflow: hidden;}
+#Sliderwrap ul li{ float:left; width:960px;}
+#Sliderwrap ul li a{ display:block;}
+#Sliderwrap ul li a img{ width:100%;}
+
+#Sliderwrap #sliderPager{ position:absolute;  width:100%; bottom:10px; text-align:center;}
+#Sliderwrap #sliderPager:after{ content:""; display:block; clear:both;}
+#Sliderwrap #sliderPager a{ display:inline-block; width:17px; height:17px; border-radius:50%; background-color:#cccccc80;}
+#Sliderwrap #sliderPager a.on{ background-color:#e1873080;}
+/* 메뉴 할인 */
+#dcEvent{ }
+#dcEvent #price{ width:52%;  float:left;}
+#dcEvent #price h4{  border-bottom: 2px solid #341c17; line-height: 5rem; margin: 10px 0;}
+#dcEvent #price dt{float:left; font-size:1.3rem; color:#050000; 
+width: 100%; margin: 8px 0;border-bottom: 2px solid #341c1780;}
+#dcEvent #price dd{font-size:0.95rem; color: black; float:left;width:100%; margin-bottom:1px;}
+/* 예약 폼태그 */
+#dcEvent #reservation{ width:47%; float:left; margin-left:6px;border-bottom: 2px solid #341c17;}
+#dcEvent #reservation h5{ color:#050000; width:100%; font-size: 1.5rem; line-height:5.6rem;border-bottom: 2px solid #341c17;
+margin:0;} 
+
+#dcEvent #reservation #cardtitle{ width:100px; background-color:#f1e3c4; float:left;}
+#dcEvent #reservation #cardtitle span{ display:block;margin-bottom:5px; color:#050000; font-size:17px;
+   line-height: 185%}
+#dcEvent #reservation #cardtitle span.cardinfo
+{ line-height: 7rem;}
+#dcEvent #reservation #cardtitle span:before{content:"*"; color:red; margin-left: 12px;}
+#dcEvent #reservation #description{ float:left; width:341px;}
+#dcEvent #reservation #description ul{ }
+#dcEvent #reservation #description ul li{ margin-bottom:7px;}
+#description ul li input[type="text"]{border:1px solid #999999; text-indent:5px; padding:2px; }
+#description ul li input[type="date"]{border:1px solid #999999; text-indent:5px; padding:2px;vertical-align: middle;}
+input[id="personnel"]{  width:30px; margin-right:5px;}
+#cardD{  float:left; }
+#cardD span{ display:block; color:#050000; width:100px;margin-bottom: 13px; margin-left: 10%; }
+#selection{ width:100px; display:block;float:left; width:240px;}
+#selection input{ display:block;margin-bottom:3px;  }
+#selection select{margin-bottom:3px;border:1px solid #ccc;width: 60px; text-align: right;padding: 2px; border:1px solid #999999;  padding:2px; }
+#selection select option{margin-bottom:3px;border:1px solid #ccc;width: 60px; text-align: right;padding: 2px; border:1px solid #999999;  padding:2px; }
+#term span{font-size:1.04rem; font-weight:bold;  color:#050000; display:block; line-height: 2.5rem; }
+ #term #termbox{ width:calc(100% - 30px); margin:0 auto; border:1px solid #ccc; font-size:0.9rem;
+ max-height:100px; min-height:100px; overflow-y:auto; background-color:white;}
+ #term input[type="checkbox"]{margin-left:15px;}
+ #term label[for="agreechk"]{color: #050000;margin-left:5px;}
+.submitcancel{ text-align: center; padding: 10px;}
+.submitcancel input[type="submit"] {border:none; font-size: 1.3rem;background-color: #341c17; color: white; font-weight: 200px;
+padding: 0.9% 3%; line-height: 140%; border-radius: 4%;}
+.submitcancel a{font-size: 1.3rem;padding: 0.9% 3%;
+border:1px solid #ccc; line-height: 100%;border-radius: 4%;}
+
+
+
+#map{border-bottom: 2px solid #341c17;}
+#map h3{ font-size:40px; color:#050000;
+     float:left; width:100%; border-bottom: 2px solid #341c17;}
+#map iframe{ float: left;}
+#map .way{float: left; width: calc(100% - 400px);}
+#map .way ul{ margin-left: 10%;}
+#map .way ul li{ margin-bottom: 10%; font-size: 1.4rem;
+    color:#050000; }
+#map .way ul li span{}
+#map .way ul li p{ margin-top: 1%; font-size: 1rem;}
+   
+#map .way ul li:before{content:""; display: block;
+background-color:#341c17; width: 10px; height: 10px;
+ float: left; border-radius: 50%; 
+margin:12px 15px;  }
+.appDownload{overflow: hidden;}
+.appDownload h4{ font-size:28px; color:#050000; margin:50px 0; float:left; width:100%;}
+.appDownload ul{ float: left;}               
+.appDownload ul li {text-align:center; width: 400px;}
+.appDownload ul li a{ display:block;}
+.appDownload ul li a img{ width: 100%;}
+.appDownload .rewardsCard{ float: left; max-width: calc(100% - 400px);
+text-align: center; box-sizing: border-box; padding-left: 0.7%;}
+.appDownload .rewardsCard h5{ margin: 15px}
+.appDownload .rewardsCard img{max-width: 180px; width: 100%;}
+.localBox{  background-color:#f1e3c4;  clear:both;margin-top: 3rem;}
+.localBox h1{float: left; margin: 1rem 0;}
+.localBox .shillaStay{float: left; transition: 0.3s; width: calc(100% - 125px); height: 72px;
+border-bottom: 0.5px solid #55555580;}
+.localBox .shillaStay a{display: inline-block; padding:0 1rem;font-size: 1.5rem; text-align: center; 
+    color:#55555580; vertical-align: top;}
+.localBox .shillaStay a.theShilla{font-size: 2rem; line-height: 3rem; /*vertical-align: top;*/
+transition: 0.3s; text-decoration: none;}
+.localBox .shillaStay a.jeju{display:none;transition: 0.4s; text-decoration: none;/*vertical-align: top;*/}
+.localBox .shillaStay a.seoul{display:none;transition: 0.4s; text-decoration: none;/*vertical-align: top;*/}
+.localBox .shillaStay a.theShilla:hover{ }
+
+.localBox .shillaStay:hover a.theShilla{color:#341c17;}
+.localBox .shillaStay:hover a.seoul{display: inline-block;}
+.localBox .shillaStay:hover a.jeju{display: inline-block;}
+.localBox .shillaStay a.seoul:hover{background-color: #bfa97d80;color:#341c17;}
+.localBox .shillaStay a.jeju:hover{background-color: #bfa97d80;color:#341c17;}
+
+.localBox ul.callNum{float: left; width: calc(55% - 125px); margin-left: 1.5rem;
+box-sizing: border-box;}
+.localBox ul.callNum li{float: left; width: 50%; font-size: 0.9rem; color:#555;}
+.localBox ul.localGNB{ float: left; width:29%; box-sizing: border-box; margin-left: 1rem;
+margin-top: 0.8rem; }
+.localBox ul.localGNB li{ float: left; margin:0 0.5rem;}
+.localBox ul.localGNB li a{display: block; line-height: 150%; }
+
+.localBox .localSNS{float: left; width:11%;}
+.localBox .localSNS a{font-size: 1.5rem; margin: 0.2rem;
+display: inline-block; line-height: 3rem;}
+.localBox .localSNS a:hover{ color: #341c17;}
+/* 약관 */
+.clausebox{width: 100%; margin:3rem 0;}
+.clausebox p{float: left; color: #55555595; font-size: 1rem;}

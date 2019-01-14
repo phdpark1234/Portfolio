@@ -1,0 +1,27 @@
+html {margin:0; padding:0}
+body {margin:0; padding:0; font-family:'Nanum Gothic', '나눔고딕', '맑은 고딕', Malgun Gothic, '돋움', Dotum, AppleGothic, sans-serif; font-size:16px; line-height:1.5; color:#666; letter-spacing:0; -webkit-text-size-adjust:none}
+div, h1, h2, h3, h4, h5, h6, ul, ol, li, dl, dt, dd, p, form, fieldset, input, table, tr, th, td, button, textarea, select {margin:0; padding:0}
+h1, h2, h3, h4, h5, h6 {font-size:100%; font-weight:normal}
+img {border:0; vertical-align:top}
+hr {display:none}
+ul, ol, dl, dt, dd, li {list-style:none}
+table, th, td {border-collapse:collapse; border-spacing:0; font-weight:normal}
+caption {display:block; text-indent:-9999em; overflow:hidden; height:0; font-size:0; line-height:0}
+fieldset, blockquote, iframe, button {border:0}
+i, em, u, cite {font-style:normal}
+strong, em, b {font-weight:normal}
+a {color:#341c17; text-decoration:none}
+input {font-family:sans-serif}
+button {background:transparent; cursor:pointer; vertical-align:middle; margin:0; padding:0; font-family:'Nanum Gothic', '나눔고딕', '맑은 고딕', Malgun Gothic, '돋움', Dotum, AppleGothic, sans-serif; font-size:14px; line-height:1.5; color:#341c17; letter-spacing:0; -webkit-text-size-adjust:none}
+button, input[type="submit"], input[type="button"], input[type="reset"] {cursor:pointer; -webkit-appearance:none}
+section, nav, article, aside, header, footer, main {display:block}
+input[type="date"]::-webkit-calendar-picker-indicator, input[type="date"]::-webkit-inner-spin-button {
+display:none}
+input[type="text"], input[type="search"], input[type="tel"], input[type="number"], input[type="password"] {-webkit-appearance:none; border-radius:0}
+::-webkit-input-placeholder {color:#aaa}
+::-moz-placeholder {color:#aaa}
+:-ms-input-placeholder {color:#aaa}
+:-moz-placeholder {color:#aaa}
+::-ms-clear, ::-ms-reveal {display:none}
+select, textarea, button {-webkit-appearance:none; border-radius:0}
+input[type="text"], input[type="search"] {-webkit-appearance:none; border-radius:0}
