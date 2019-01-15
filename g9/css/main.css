@@ -63,3 +63,22 @@ border-radius: 19px;}
 .navs .in_search{height: 24px; width: 120px;margin: 8px 12px 0 20px; border: none;}
 .navs in_search:focus{outline: none;}
 .navs .fa-search{font-size: 1.25em;margin-right: 20px;}
+
+/* banner PC */
+
+.banner{position: relative; margin: 3rem auto 0 auto;
+}
+.banner_wrap{position: relative; width: 100%;}
+/* 배너 무빙의 기준 */
+.banner_wrap > li {position: absolute; width: 100%;}
+.banner_slogan{position: absolute; width: 90%; left: 5%; top:50%; color: #fff; transform:translateY(-50%);
+font-size: 1rem;}
+.banner_slogan > h1{font-size: 4em; margin-bottom: 0.75em;}
+.banner_slogan > h4 {font-size: 1.5em; margin-bottom: 1em;}
+.banner_slogan > button {font-size: 1em; padding: 1em;background-color: rgba(248, 248, 219, .7); color: #121212;border: none;}
+.banner_slogan > button:hover {background-color: rgba(248, 248, 219, 1);}
+
+/*  horizental only */
+.bt_banner{position: absolute; z-index: 11; top: 50%;
+transform: translateY(-50%); font-size: 3rem; opacity: 0.3}
+

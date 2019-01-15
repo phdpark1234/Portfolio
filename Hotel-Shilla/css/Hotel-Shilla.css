@@ -176,12 +176,12 @@ transition: 0.3s; text-decoration: none;}
 .localBox ul.callNum{float: left; width: calc(55% - 125px); margin-left: 1.5rem;
 box-sizing: border-box;}
 .localBox ul.callNum li{float: left; width: 50%; font-size: 0.9rem; color:#555;}
-.localBox ul.localGNB{ float: left; width:29%; box-sizing: border-box; margin-left: 1rem;
+.localBox ul.localGNB{ float: left; width:28%; box-sizing: border-box;
 margin-top: 0.8rem; }
 .localBox ul.localGNB li{ float: left; margin:0 0.5rem;}
 .localBox ul.localGNB li a{display: block; line-height: 150%; }
 
-.localBox .localSNS{float: left; width:11%;}
+.localBox .localSNS{float: left; width:13%; margin-left: 0.9rem;}
 .localBox .localSNS a{font-size: 1.5rem; margin: 0.2rem;
 display: inline-block; line-height: 3rem;}
 .localBox .localSNS a:hover{ color: #341c17;}
