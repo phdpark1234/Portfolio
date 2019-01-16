@@ -21,6 +21,7 @@
 }
 
 .wrap{max-width: 1920px;margin:auto;}
+.wrap1200{max-width: 1200px; margin: auto;}
 .modals{ position: fixed; z-index: 9999;
 display: none;}
 .rt_bg{width: 100%;height: 100%;background-color: #000000;top: 0; left: 0;}
@@ -120,6 +121,27 @@ cursor: pointer;}
 	.banner_slogan{font-size: 0.5rem;}
 }
 
+/* eventProd */
 
-
-
+.eventProd{margin: 3rem auto 0 auto;}
+.eventProd ul li{float: left;}
+.eventProd ul li a{display: block; text-decoration: none;}
+.eventProd ul li a img{width: 100%; }
+.eventProd ul.first{position: relative;}
+.eventProd ul.first li{ width: 33%; margin: 0.1rem;overflow: hidden; position: relative; border:2px solid #00c6ff }
+.eventProd ul.first li a{}
+.eventProd ul.first li a img{transition: 0.4s; }
+.eventProd ul.first li a img:hover{transform: scale(1.1);}
+.eventProd ul.first li a div{background-color: #ffffff; width: 100%; position: absolute;bottom: 0;text-align: center;
+opacity: 0; transition: 0.3s; color: #000; height: 60px; }
+.eventProd ul.first li a:hover div{opacity: 1;}
+.eventProd ul.first li a div h4{margin: 0.5rem 0; font-size: 1.25rem; font-weight: 600;}
+.eventProd ul.first li a div span{padding: 3rem 0; font-size: 1rem; }
+.eventProd ul.second{margin: 3rem auto 0 auto;}
+.eventProd ul.second li{position: relative;}
+.eventProd ul.second li a{color: #000;}
+.eventProd ul.second li a img{}
+.eventProd ul.second li a div{background-color: #ffeee2;position: absolute; top: 57%;left: 1%;
+padding: 0.5rem 1.4rem;}
+.eventProd ul.second li a div h1{    margin: 1.2rem 0;}
+.eventProd ul.second li a div span{line-height: 150%; font-size: 1.5rem; color: #555;}
