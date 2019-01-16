@@ -20,7 +20,7 @@
 	100%{transform: scale(1);}
 }
 
-.wrap{max-width: 1200px;margin:auto;}
+.wrap{max-width: 1920px;margin:auto;}
 .modals{ position: fixed; z-index: 9999;
 display: none;}
 .rt_bg{width: 100%;height: 100%;background-color: #000000;top: 0; left: 0;}
@@ -89,11 +89,12 @@ border-radius: 19px;}
 
 /* banner PC */
 .banner{position: relative; margin: 3rem auto 0 auto;
-height: 432px; overflow: hidden;}
-.banner_wrap{position: relative;width: 100%;}
+height: 360px; overflow: hidden;}
+.banner_wrap{position: relative;width: 100%; text-align: center;}
 /* 배너 무빙의 기준 */
 .banner_wrap > li{width: 100%; position: absolute;}
-.banner_slogan{position: absolute; width: 90%;left: 5%; top: 50%;color: #fff; transform: translateY(-50%); font-size: 1rem;}
+.banner_wrap > li > img{max-width: 1000px;}
+.banner_slogan{position: absolute; width: 90%;left: -16%; top: 50%;color: #fff; transform: translateY(-50%); font-size: 1rem;}
 .banner_slogan > h1 {font-size: 4em;margin-bottom: 0.75em;}
 .banner_slogan > h4 {font-size: 1.5em;margin-bottom: 1em;}
 .banner_slogan > button {font-size: 1em; padding: 1em;background-color: rgba(248, 248, 219, .7); color: #121212; border: none;}
@@ -112,3 +113,13 @@ cursor: pointer;}
 .social_link > li:hover{ color: #f1f1f1;}
 
 /* banner response */
+@media screen and (max-width:768px){
+	.banner_slogan{font-size: 0.75rem;}
+}
+@media screen and (max-width:480px){
+	.banner_slogan{font-size: 0.5rem;}
+}
+
+
+
+

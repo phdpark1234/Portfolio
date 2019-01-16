@@ -66,3 +66,16 @@ $(".rt_bg").click(function(e){
 	e.stopPropagation();
 	$(".rt_cont .fa-close").trigger("click");
 });
+
+// 반응형/높이를 위한 resize
+
+$(window).resize(function(){
+	banInit();
+}).trigger("resize");
+
+/*** 메인 배너 ***/
+function banInit(){
+	$(".banner_wrap").height($(".banner_wrap > li").height());
+}
+
+var slide = new SlideHori($("#banner1"), $(".slide"));
