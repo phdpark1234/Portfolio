@@ -141,7 +141,8 @@ opacity: 0; transition: 0.3s; color: #000; height: 60px; }
 .eventProd ul.second li{position: relative;}
 .eventProd ul.second li a{color: #000;}
 .eventProd ul.second li a img{}
-.eventProd ul.second li a div{background-color: #ffeee2;position: absolute; top: 57%;left: 1%;
-padding: 0.5rem 1.4rem;}
+.eventProd ul.second li a div{background-color: #ffeee250;position: absolute; top: 57%;left: 1%;
+padding: 0.5rem 1.4rem;transition: 0.4s;}
+.eventProd ul.second li a div:hover{background-color: #ffeee2;}
 .eventProd ul.second li a div h1{    margin: 1.2rem 0;}
 .eventProd ul.second li a div span{line-height: 150%; font-size: 1.5rem; color: #555;}
