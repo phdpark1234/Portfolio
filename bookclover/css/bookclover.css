@@ -108,28 +108,48 @@ line-height:100px; font-weight:bold; color:white;text-shadow: 4px 2px black;}
 #btns button.right{ float:right}
 
 
-#catalog #books{width:1200px; margin:0 auto; overflow:hidden; box-sizing:border-box; }
+#catalog #books{ width:100%;max-width:1200px; margin:0 auto; overflow:hidden; box-sizing:border-box; }
 #catalog #books h1{font-size:40px; margin: 30px 0; color: #291677;}
 #catalog #books ul{float:left; }
 #catalog #books ul:after{content:""; display:block; clear:both}
-#catalog #books ul.UXUI{  border:2px solid #ccc}
+#catalog #books ul.UXUI{  }
 #catalog #books ul.recomendation{}
 
-#catalog #books ul li{float: left; box-sizing:border-box  }
-#catalog #books ul.UXUI li + li{ border-left:2px solid #ccc}
+#catalog #books ul li{float: left; box-sizing:border-box;border:2px solid #ccc;}
+#catalog #books ul.UXUI li + li{ border-left:none;}
 #catalog #books ul li a{display: block; text-align:center}
 #catalog #books ul li a img{display: block}
+
+@media (max-width: 786px) {
+	
+}
+@media (max-width:480px) {
+
+}
 
 #recommendation{ width: 1200px; margin:20px auto;  }
 #recommendation h1{font-size:40px; margin: 30px 0; color: #291677;}
 #recommendation:after{ content:""; display:block; clear:both;}
 #recommendation ul.reco{ }
-#recommendation ul.reco li{float:left; height:300px; width:20%; position:relative;
+#recommendation ul.reco li{float:left; height:300px;width:20%; position:relative;
 background-color:#a5dac3; border:10px solid white; box-sizing:border-box; overflow:hidden;}
 
 #recommendation ul.reco li a{ display:block; position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);   }
 #recommendation ul.reco li:hover a img{ transform:scale(1.1)}
 #recommendation ul.reco li a img{ display:block; transition:0.5s; }
+@media (max-width: 786px) {
+#recommendation ul.reco li:nth-child(4){clear: both;}	
+#recommendation ul.reco li:nth-child(7){clear: both;}	
+#recommendation ul.reco li:nth-child(10){clear: both;}	
+}
+@media (max-width:480px) {
+	#recommendation ul.reco{}
+	#recommendation ul.reco li{border:2px solid white;}
+	#recommendation ul.reco li:nth-child(4){clear: none;}
+	#recommendation ul.reco li:nth-child(7){clear: none;}
+	#recommendation ul.reco li:nth-child(10){clear: none;}
+	#recommendation ul.reco li:nth-child(odd){clear: both;}
+}
 
 #tabBox{ width:1200px; margin:20px auto;  height:600px; }
 #tabBox h3{font-size:40px; margin: 30px 0; color: #291677;}
@@ -232,5 +252,16 @@ border-bottom: 2px solid #291677;}
 #bt #clause:after{content:""; display:block; clear:both}
 #bt #clause li{ float:left; height:18px; }
 #bt #clause li + li{border-left:1px solid black}
-#bt #clause li a{ padding:0 20px; line-height:100%; display:block; font-size:18px; font-weight:bold;}
+#bt #clause li a{ padding:0 20px; line-height:100%; display:block; font-size:1.2rem; font-weight:bold;}
 #bt address{text-align: center; overflow:hidden; }
+
+@media (max-width: 786px) {
+	#bt .bottom1 #bottomSNS{transform: translateX(102px);}
+	
+}
+@media (max-width:480px) {
+	#bt .bottom1 #bottomSNS{transform: translate(-96px,100px);
+	}
+	#bt #clause li a{font-size:0.75rem;}
+	#bt address{margin-top:4rem;}
+}

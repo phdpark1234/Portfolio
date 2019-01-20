@@ -41,6 +41,6 @@ function aniRoll(a){//선언위치 중요하지 않음
 		aniel.css("margin-left",-aniWidth);
 	    });
 }
-$("#loadDiv").load("http://hongduck710.cafe24.com/bookclover/load.html");
+$("#loadDiv").load("../bookclover/load.html");
 
   });

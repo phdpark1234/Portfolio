@@ -37,7 +37,7 @@ p{font-size:20px; color: black; float:left;width:100%; margin-bottom:25px; }
 .top3{position: absolute; left:50%; top:50%} 
 
 p{}
-#quick{position: fixed; transform: translate(1010%,8%);top: 50%;left: 50%;
+#quick{position: fixed; bottom: 15%; right: 3%;
 z-index:1000 }
 #quick li + li{margin-top:8px}
 #quick li{ }
