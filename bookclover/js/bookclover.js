@@ -11,6 +11,11 @@ var timeSet = 3000;//주기시간
 var anielchildW = aniWidth - (anielchildmargin * 2);
 var dir = "-=";//왼쪽방향
 
+$("#gnb786px").click(function(){
+	$("#gnb786px ul.d2786px").toggleClass("act");
+	
+});
+
 $("#btns").width($("#sliderWrap").width() - (anielchildmargin * 2));
 anielchild.width(anielchildW);
 anielchild.css({"margin-left":anielchildmargin,"margin-right":anielchildmargin});
@@ -43,4 +48,6 @@ function aniRoll(a){//선언위치 중요하지 않음
 }
 $("#loadDiv").load("../bookclover/load.html");
 
-  });
+
+});
+
