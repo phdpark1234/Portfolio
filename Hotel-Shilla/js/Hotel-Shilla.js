@@ -29,7 +29,8 @@ $(function(){
 		$("#quick li a").click(function(){
 			$("html, body").stop().animate({"scrollTop":0},500);
 		});		
-	
+		
+		
 
 	function aniSlide(num){
 		$("#Sliderwrap ul").stop(true, true).animate({"marginLeft":(num+1)*(-960)},400,function(){
