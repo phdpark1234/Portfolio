@@ -12,9 +12,25 @@ var anielchildW = aniWidth - (anielchildmargin * 2);
 var dir = "-=";//왼쪽방향
 
 $("#gnb786px").click(function(){
-	$("#gnb786px ul.d2786px").toggleClass("act");
-	
+	console.log("hi");
+	$(".mm786px").toggleClass("act");
 });
+$(".mm786px").click(function(e){
+	e.stopPropagation();
+});
+$(".d1786px").click(function(){
+	$(this).next().slideToggle();
+});
+/*
+$("#gnb786px").on("click",function(){
+	$("#gnb786px ul.mm786px").toggleClass("act");
+});
+
+
+$("ul.mm786px li").click(function(){
+	$("ul.mm786px li .d2786px").toggleClass("open");
+});
+*/
 
 $("#btns").width($("#sliderWrap").width() - (anielchildmargin * 2));
 anielchild.width(anielchildW);

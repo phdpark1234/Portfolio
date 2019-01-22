@@ -1,428 +1,446 @@
 <!doctype html>
 <html>
+
 <head>
-<meta charset="utf-8">
-<title>Book Clover</title>
-<meta name="viewport" content="width=1024px, user-scalable=no">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-<link rel="stylesheet" type="text/css" href="../Hotel-Shilla/css/common.css">
-<link rel="stylesheet" type="text/css" href="../bookclover/css/bookclover.css">
-<script
-  src="https://code.jquery.com/jquery-2.2.4.min.js"
-  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
-  crossorigin="anonymous"></script>
-<script src="../bookclover/js/bookclover.js"></script>
+    <meta charset="utf-8">
+    <title>Book Clover</title>
+    <meta name="viewport" content="width=1024px, user-scalable=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
+        crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../Hotel-Shilla/css/common.css">
+    <link rel="stylesheet" type="text/css" href="../bookclover/css/bookclover.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+    <script src="../bookclover/js/bookclover.js"></script>
 </head>
 
 <body>
-<header id="hd">
-	<div class="top1">
-        <ul id="util">
-				<li><a href="">로그인</a><a href="" class="blind">로그아웃</a></li>
-				<li><a href="">회원가입</a></li>
-            	<li>
-            		<a href="">언어</a>
-            		<div class="lang">
-                		<a href="">한국어</a>
-                		<a href="">영어</a>
-                   		<a href="">프랑스어</a>
-                	</div>
-            	</li>
-				<li><a href="">전체서비스</a></li>
-				<li class="search">
-              		<input type="search" id="searching">
-              		<button class="mgGlass"></button>
-            	</li> 
-        </ul>
-		
-		
-            
-        <ul id="topSNS">
-       <li><a href="https://ko-kr.facebook.com/">
-       <img src="http://hongduck710.cafe24.com/bookclover/img/facebook.png" alt="페이스북" title="페이스북"></a></li>
-	   <li><a href="https://www.instagram.com/">
-       <img src="http://hongduck710.cafe24.com/bookclover/img/insta.png" alt="인스타그램" title="인스타그램"></a></li>
-	   <li><a href="https://twitter.com/">
-       <img src="http://hongduck710.cafe24.com/bookclover/img/twitter.png" alt="트위터" title="트위터"></a></li>
-	   <li><a href="https://www.youtube.com/">
-       <img src="http://hongduck710.cafe24.com/bookclover/img/youtube.png" alt="유튜브" title="유튜브"></a></li> 
-        </ul>
-    	<h1><a href="http://hongduck710.cafe24.com/bookclover/bookclover.html"><img src=			"http://hongduck710.cafe24.com/bookclover/img/bookcloverlogo2.svg" alt="로고" width="130"></a></h1>
-		 <ul id="gnb">
-			<li>
-			<a href="" class="d1">북클로버 소개</a>
-			<ul class="d2">
-				<li><a href="">회사 소개</a></li>
-				<li><a href="">매장 안내</a></li>
-			
-			</ul>
-        </li>
-        
-		<li>
-			<a href="" class="d1">제품구입</a>
-			<ul class="d2">
-				<li><a href="">도서</a></li>
-                <li><a href="">e북</a></li>
-				<li><a href="">오디오북</a></li>
-                <li><a href="">리더기</a></li>
-			
-			</ul>
-		</li>
-		<li>
-			<a href="" class="d1">고객 지원</a>
-			<ul class="d2">
-				<li><a href="">공지사항</a></li>
-				<li><a href="">FAQ</a></li>
-				<li><a href="">다운로드</a></li>
-			</ul>
-		</li>
-		<li>
-			<a href="" class="d1">문의</a>
-			<ul class="d2">
-			</ul>
-		</li>
-         </ul> 
-            
-         <div class="bg"></div>	
-         <div id="gnb786px">
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul class="d2786px">
+    <header id="hd">
+        <div class="top1">
+            <ul id="util">
+                <li><a href="">로그인</a><a href="" class="blind">로그아웃</a></li>
+                <li><a href="">회원가입</a></li>
                 <li>
-                    북클로버 소개
+                    <a href="">언어</a>
+                    <div class="lang">
+                        <a href="">한국어</a>
+                        <a href="">영어</a>
+                        <a href="">프랑스어</a>
+                    </div>
+                </li>
+                <li><a href="">전체서비스</a></li>
+                <li class="search">
+                    <input type="search" id="searching">
+                    <button class="mgGlass"></button>
+                </li>
+            </ul>
+
+
+
+            <ul id="topSNS">
+                <li><a href="https://ko-kr.facebook.com/">
+                        <img src="http://hongduck710.cafe24.com/bookclover/img/facebook.png" alt="페이스북" title="페이스북"></a></li>
+                <li><a href="https://www.instagram.com/">
+                        <img src="http://hongduck710.cafe24.com/bookclover/img/insta.png" alt="인스타그램" title="인스타그램"></a></li>
+                <li><a href="https://twitter.com/">
+                        <img src="http://hongduck710.cafe24.com/bookclover/img/twitter.png" alt="트위터" title="트위터"></a></li>
+                <li><a href="https://www.youtube.com/">
+                        <img src="http://hongduck710.cafe24.com/bookclover/img/youtube.png" alt="유튜브" title="유튜브"></a></li>
+            </ul>
+            <h1><a href="http://hongduck710.cafe24.com/bookclover/bookclover.html"><img src="http://hongduck710.cafe24.com/bookclover/img/bookcloverlogo2.svg"
+                        alt="로고" width="130"></a></h1>
+            <ul id="gnb">
+                <li>
+                    <a href="" class="d1">북클로버 소개</a>
+                    <ul class="d2">
+                        <li><a href="">회사 소개</a></li>
+                        <li><a href="">매장 안내</a></li>
+
+                    </ul>
+                </li>
+
+                <li>
+                    <a href="" class="d1">제품구입</a>
+                    <ul class="d2">
+                        <li><a href="">도서</a></li>
+                        <li><a href="">e북</a></li>
+                        <li><a href="">오디오북</a></li>
+                        <li><a href="">리더기</a></li>
+
+                    </ul>
                 </li>
                 <li>
-                    제품 구입
+                    <a href="" class="d1">고객 지원</a>
+                    <ul class="d2">
+                        <li><a href="">공지사항</a></li>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">다운로드</a></li>
+                    </ul>
                 </li>
                 <li>
-                    고객 지원
+                    <a href="" class="d1">문의</a>
+                    <ul class="d2">
+                    </ul>
                 </li>
-                <li>
-                    문의
-                </li>
-            </ul>    
+            </ul>
+
+            <div class="bg"></div>
+            <div id="gnb786px">
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul class="mm786px">
+                    <li>
+                        <a href="#none" class="d1786px" onclick="event.stopPropagation()">북클로버 소개</a>
+                        <div class="d2786px">
+                            <a href="">회사소개</a>
+                            <a href="">매장안내</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#none" class="d1786px" onclick="event.stopPropagation()">제품 구입</a>
+                        <div class="d2786px">
+                            <a href="">도서</a>
+                            <a href="">e북</a>
+                            <a href="">오디오북</a>
+                            <a href="">리더기</a>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#none" class="d1786px" onclick="event.stopPropagation()">고객 지원</a>
+                    </li>
+                    <li>
+                        <a href="#none" class="d1786px" onclick="event.stopPropagation()">문의</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-                
+
+    </header>
+
+    <div id="sliderWrap">
+        <ul>
+            <li>
+                <a href="">
+                    <span class="intro1">
+                        계몽사 어린이 명작극장<br>
+                        재출간 기념 이벤트
+                    </span>
+                    <span class="DCbanner">
+                        <p>도서, e북 합본</p>
+                        <p>구매 할인!</p>
+
+                    </span>
+                    <span class="Arrow">보러가기<i class="far fa-hand-point-right"></i></span>
+                    <span class="imgZone">
+                        <img src="http://hongduck710.cafe24.com/bookclover/img/fairytales.png" alt="" class="slimg1">
+                    </span>
+                </a>
+            </li>
+
+            <li><a href="">
+                    <img src="http://hongduck710.cafe24.com/bookclover/img/happytalkset.png" alt="" class="slimg2">
+                    <span class="intro2">
+                        웅진 해피토크 어린이 영어 세트 <br>
+                        재출간 기념 이벤트
+                    </span>
+                    <span class="DCbanner">
+                        <p>도서, e북 합본</p>
+                        <p>구매 할인!</p>
+
+                    </span>
+                    <span class="Arrow">보러가기<i class="far fa-hand-point-right"></i></span>
+
+
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="http://hongduck710.cafe24.com/bookclover/img/boycenter.png" alt="소년중앙" class="slimg3"
+                        height="600">
+                    <img src="http://hongduck710.cafe24.com/bookclover/img/boycenter2.png" alt="소년중앙" class="slimg3.3"
+                        height="600">
+                    <span class="intro3">
+                        다시 돌아온 소년중앙<br> e북으로도 만나보세요!
+
+                    </span>
+                    <span class="DCbanner">
+                        <p>도서, e북 합본</p>
+                        <p>구매 할인!</p>
+                    </span>
+                    <span class="Arrow">보러가기<i class="far fa-hand-point-right"></i></span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="http://hongduck710.cafe24.com/bookclover/img/treasure1.jpg" alt="보물섬" class="slimg4">
+                    <img src="http://hongduck710.cafe24.com/bookclover/img/treasure2.jpg" alt="보물섬" class="slimg44">
+                    <span class="intro4">
+                        월간 만화 보물섬 과월호 재출간!<br> 여러분들의 추억을 다시 만나보세요!
+                    </span>
+                    <span class="DCbanner">
+                        <p>도서, e북 합본</p>
+                        <p>구매 할인!</p>
+
+                    </span>
+                    <span class="Arrow">보러가기<i class="far fa-hand-point-right"></i></span>
+                </a>
+            </li>
+            <li>
+                <a href="">
+                    <img src="http://hongduck710.cafe24.com/bookclover/img/anitales.png" alt="애니메이션 세계명작" class="slimg5"
+                        height="600">
+                    <span class="intro5">
+                        애니메이션 세계명작 세트<br>재출간 기념 특별 할인
+                    </span>
+                    <span class="DCbanner">
+                        <p>도서, e북 합본</p>
+                        <p>구매 할인!</p>
+
+                    </span>
+                    <span class="Arrow">보러가기<i class="far fa-hand-point-right"></i></span>
+                </a>
+            </li>
         </ul>
-   </div>
- 	
-</header>
+        <div id="btns">
+            <button type="button" title="이전" class="left"><i class="fas fa-angle-left"></i></button>
+            <button type="button" title="다음" class="right"><i class="fas fa-angle-right"></i></button>
+        </div>
 
-<div id="sliderWrap">
-	<ul>
-		<li>
-          <a href="">
-             <span class="intro1">
-                계몽사 어린이 명작극장<br> 
-                재출간 기념 이벤트 
-             </span>
-             <span class="DCbanner">
-                <p>도서, e북 합본</p> 
-                <p>구매 할인!</p> 
-               
-             </span>
-             <span class="Arrow">보러가기<i class="far fa-hand-point-right"></i></span>
-             <span class="imgZone">
-                 <img src="http://hongduck710.cafe24.com/bookclover/img/fairytales.png" alt="" class="slimg1">
-             </span>
-          </a>
-        </li>
-       
-		<li><a href="">
-        		 <img src="http://hongduck710.cafe24.com/bookclover/img/happytalkset.png" alt="" class="slimg2">
-                 <span class="intro2">
-               웅진 해피토크 어린이 영어 세트 <br>
-                재출간 기념 이벤트
-             </span>
-             <span class="DCbanner">
-                <p>도서, e북 합본</p> 
-                <p>구매 할인!</p> 
-               
-             </span>
-             <span class="Arrow">보러가기<i class="far fa-hand-point-right"></i></span>
-              
-            
-            </a>
-        </li>
-		<li>
-        	<a href="">
-            	<img src="http://hongduck710.cafe24.com/bookclover/img/boycenter.png" alt="소년중앙" class="slimg3" height="600">
-                <img src="http://hongduck710.cafe24.com/bookclover/img/boycenter2.png" alt="소년중앙" class="slimg3.3" height="600">
-                <span class="intro3">
-                  다시 돌아온 소년중앙<br> e북으로도 만나보세요!
-                	
-                </span>
-                <span class="DCbanner">
-                <p>도서, e북 합본</p> 
-                <p>구매 할인!</p>   
-                </span>
-                <span class="Arrow">보러가기<i class="far fa-hand-point-right"></i></span>
-            </a>
-         </li>
-		<li>
-        	<a href="">
-            	<img src="http://hongduck710.cafe24.com/bookclover/img/treasure1.jpg" alt="보물섬" class="slimg4">
-                <img src="http://hongduck710.cafe24.com/bookclover/img/treasure2.jpg" alt="보물섬" class="slimg44">
-                <span class="intro4">
-                  월간 만화 보물섬 과월호 재출간!<br> 여러분들의 추억을 다시 만나보세요!  
-                </span>
-                <span class="DCbanner">
-                <p>도서, e북 합본</p> 
-                <p>구매 할인!</p> 
-               
-             	</span>
-             	<span class="Arrow">보러가기<i class="far fa-hand-point-right"></i></span>
-            </a>
-        </li>
-		<li>
-        	<a href="">
-            	<img src="http://hongduck710.cafe24.com/bookclover/img/anitales.png" alt="애니메이션 세계명작" class="slimg5" height="600">
-            	<span class="intro5">
-                  애니메이션 세계명작 세트<br>재출간 기념 특별 할인 
-                </span>
-                <span class="DCbanner">
-                <p>도서, e북 합본</p> 
-                <p>구매 할인!</p> 
-               
-             	</span>
-             	<span class="Arrow">보러가기<i class="far fa-hand-point-right"></i></span>
-            </a>
-        </li>
-	</ul>
-    <div id="btns">
-        <button type="button" title="이전" class="left"><i class="fas fa-angle-left"></i></button>
-        <button type="button" title="다음" class="right"><i class="fas fa-angle-right"></i></button>
     </div>
+    <div id="catalog">
+        <div id="loadDiv">
+        </div>
+    </div>
+    <div id="recommendation">
+        <h1>추천 도서</h1>
+        <ul class="reco">
+            <li><a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/happytalk2.jpg" alt="해피토크" title="해피토크"></a></li>
+            <li><a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/wally.jpg"></a></li>
+            <li><a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/woongjin.png" width="200"></a></li>
+            <li><a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/gyemongsa.png" width="180" alt="계몽사 어린이 명작극장"></a></li>
+            <li><a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/geumseong.jpg" alt="금성 과학학습만화" width="200px"></a></li>
+            <li><a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/woongjinvisual.jpg" alt="웅진 비주얼 박물관"
+                        width="200px"></a></li>
+            <li><a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kongsook23.jpeg" alt="콩숙이의 일기" width="200"></a></li>
+            <li><a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="180" alt="Hello 베이비 Hi 맘"></a></li>
+            <li><a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/geumseongedu.gif" width="180" alt="금성 교과학습만화"></a></li>
+            <li><a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/codingman.jpg" width="180" alt="코딩맨"></a></li>
+        </ul>
+    </div>
+    <div id="tabBox">
+        <h3>베스트 셀러</h3>
+        <ul>
+            <li class="on">
+                <a href="#none" class="tab on">tab1</a>
+                <div class="tabcon">
 
-</div>   
-<div id="catalog">
-   <div id="loadDiv">
-   </div>   
-</div>
-<div id="recommendation">   
-      <h1>추천 도서</h1>
-      <ul class="reco">
-         <li><a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/happytalk2.jpg" alt="해피토크" title="해피토크"></a></li> 
-         <li><a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/wally.jpg"></a></li> 
-         <li><a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/woongjin.png" width="200"></a></li> 
-         <li><a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/gyemongsa.png" width="180"  alt="계몽사 어린이 명작극장"></a></li>
-         <li><a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/geumseong.jpg" alt="금성 과학학습만화" width="200px"></a></li>
-         <li><a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/woongjinvisual.jpg" alt="웅진 비주얼 박물관" width="200px"></a></li>
-         <li><a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kongsook23.jpeg" alt="콩숙이의 일기" width="200"></a></li>
-         <li><a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="180"  alt="Hello 베이비 Hi 맘"></a></li> 
-         <li><a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/geumseongedu.gif" width="180"  alt="금성 교과학습만화"></a></li> 
-         <li><a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/codingman.jpg" width="180" alt="코딩맨"></a></li> 
-      </ul>
-</div>
-<div id="tabBox">
-	<h3>베스트 셀러</h3>
-    <ul>
-        	<li class="on">
-           		<a href="#none" class="tab on">tab1</a>
-             	<div class="tabcon">
-                	
-        			<a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kongsook3.jpg" alt="콩숙이의 일기">
-                    <span>콩숙이의 일기<br>정가: 10000\</span></a>
                     <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kongsook3.jpg" alt="콩숙이의 일기">
-                    <span>콩숙이의 일기<br>정가: 10000\</span></a> 
+                        <span>콩숙이의 일기<br>정가: 10000\</span></a>
                     <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kongsook3.jpg" alt="콩숙이의 일기">
-                    <span>콩숙이의 일기<br>정가: 10000\</span></a> 
+                        <span>콩숙이의 일기<br>정가: 10000\</span></a>
                     <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kongsook3.jpg" alt="콩숙이의 일기">
-                    <span>콩숙이의 일기<br>정가: 10000\</span></a> 
+                        <span>콩숙이의 일기<br>정가: 10000\</span></a>
                     <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kongsook3.jpg" alt="콩숙이의 일기">
-                    <span>콩숙이의 일기<br>정가: 10000\</span></a> 
+                        <span>콩숙이의 일기<br>정가: 10000\</span></a>
                     <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kongsook3.jpg" alt="콩숙이의 일기">
-                    <span>콩숙이의 일기<br>정가: 10000\</span></a> 
+                        <span>콩숙이의 일기<br>정가: 10000\</span></a>
                     <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kongsook3.jpg" alt="콩숙이의 일기">
-                    <span>콩숙이의 일기<br>정가: 10000\</span></a> 
+                        <span>콩숙이의 일기<br>정가: 10000\</span></a>
                     <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kongsook3.jpg" alt="콩숙이의 일기">
-                    <span>콩숙이의 일기<br>정가: 10000\</span></a> 
+                        <span>콩숙이의 일기<br>정가: 10000\</span></a>
                     <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kongsook3.jpg" alt="콩숙이의 일기">
-                    <span>콩숙이의 일기<br>정가: 10000\</span></a> 
+                        <span>콩숙이의 일기<br>정가: 10000\</span></a>
                     <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kongsook3.jpg" alt="콩숙이의 일기">
-                    <span>콩숙이의 일기<br>정가: 10000\</span></a>
+                        <span>콩숙이의 일기<br>정가: 10000\</span></a>
                     <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kongsook3.jpg" alt="콩숙이의 일기">
-                    <span>콩숙이의 일기<br>정가: 10000\</span></a>
+                        <span>콩숙이의 일기<br>정가: 10000\</span></a>
                     <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kongsook3.jpg" alt="콩숙이의 일기">
-                    <span>콩숙이의 일기<br>정가: 10000\</span></a>
+                        <span>콩숙이의 일기<br>정가: 10000\</span></a>
                     <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kongsook3.jpg" alt="콩숙이의 일기">
-                    <span>콩숙이의 일기<br>정가: 10000\</span></a>
+                        <span>콩숙이의 일기<br>정가: 10000\</span></a>
+                    <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kongsook3.jpg" alt="콩숙이의 일기">
+                        <span>콩숙이의 일기<br>정가: 10000\</span></a>
                 </div>
             </li>
-           
-           
-            <li> 
-            <a href="#none" class="tab">tab2</a>
-           <div class="tabcon">
-				<a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100"  alt="Hello 베이비 Hi 맘">
-                <span>콩숙이의 일기<br>정가: 10000\</span></a>
-                <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100"  alt="Hello 베이비 Hi 맘"></a>
-                <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100"  alt="Hello 베이비 Hi 맘"></a>
-                <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100"  alt="Hello 베이비 Hi 맘"></a>
-                <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100"  alt="Hello 베이비 Hi 맘"></a>
-                <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100"  alt="Hello 베이비 Hi 맘"></a>
-                <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100"  alt="Hello 베이비 Hi 맘"></a>
-                <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100"  alt="Hello 베이비 Hi 맘"></a>
-                <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100"  alt="Hello 베이비 Hi 맘"></a>
-                <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100"  alt="Hello 베이비 Hi 맘"></a>
-                <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100"  alt="Hello 베이비 Hi 맘"></a>
-                <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100"  alt="Hello 베이비 Hi 맘"></a>
-                <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100"  alt="Hello 베이비 Hi 맘"></a>
-                <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100"  alt="Hello 베이비 Hi 맘"></a>
-                <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100"  alt="Hello 베이비 Hi 맘"></a>
-                <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100"  alt="Hello 베이비 Hi 맘"></a>
-                <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100"  alt="Hello 베이비 Hi 맘"></a>
-                <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100"  alt="Hello 베이비 Hi 맘"></a>
-                <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100"  alt="Hello 베이비 Hi 맘"></a>
-                <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100"  alt="Hello 베이비 Hi 맘"></a>
-                <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100"  alt="Hello 베이비 Hi 맘"></a>
-                <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100"  alt="Hello 베이비 Hi 맘"></a>
-                <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100"  alt="Hello 베이비 Hi 맘"></a>
-           </div>
-            </li> 
-             
-            
+
+
             <li>
-            <a href="#none" class="tab">tab3</a>
-             <div class="tabcon">
-                 <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/boycenter.png" width="200" alt="소년중앙">
-                 <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/boycenter.png" width="200" alt="소년중앙">	
-                 <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/boycenter.png" width="200" alt="소년중앙">	
-                 <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/boycenter.png" width="200" alt="소년중앙">
-                 <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/boycenter.png" width="200" alt="소년중앙">				
-             </div>
+                <a href="#none" class="tab">tab2</a>
+                <div class="tabcon">
+                    <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100" alt="Hello 베이비 Hi 맘">
+                        <span>콩숙이의 일기<br>정가: 10000\</span></a>
+                    <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100" alt="Hello 베이비 Hi 맘"></a>
+                    <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100" alt="Hello 베이비 Hi 맘"></a>
+                    <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100" alt="Hello 베이비 Hi 맘"></a>
+                    <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100" alt="Hello 베이비 Hi 맘"></a>
+                    <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100" alt="Hello 베이비 Hi 맘"></a>
+                    <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100" alt="Hello 베이비 Hi 맘"></a>
+                    <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100" alt="Hello 베이비 Hi 맘"></a>
+                    <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100" alt="Hello 베이비 Hi 맘"></a>
+                    <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100" alt="Hello 베이비 Hi 맘"></a>
+                    <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100" alt="Hello 베이비 Hi 맘"></a>
+                    <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100" alt="Hello 베이비 Hi 맘"></a>
+                    <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100" alt="Hello 베이비 Hi 맘"></a>
+                    <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100" alt="Hello 베이비 Hi 맘"></a>
+                    <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100" alt="Hello 베이비 Hi 맘"></a>
+                    <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100" alt="Hello 베이비 Hi 맘"></a>
+                    <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100" alt="Hello 베이비 Hi 맘"></a>
+                    <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100" alt="Hello 베이비 Hi 맘"></a>
+                    <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100" alt="Hello 베이비 Hi 맘"></a>
+                    <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100" alt="Hello 베이비 Hi 맘"></a>
+                    <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100" alt="Hello 베이비 Hi 맘"></a>
+                    <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100" alt="Hello 베이비 Hi 맘"></a>
+                    <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/kimrin.jpg" width="100" alt="Hello 베이비 Hi 맘"></a>
+                </div>
             </li>
-           
-           
+
+
             <li>
-            <a href="#none" class="tab">tab4</a>
-             <div class="tabcon"></div>
+                <a href="#none" class="tab">tab3</a>
+                <div class="tabcon">
+                    <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/boycenter.png" width="200" alt="소년중앙">
+                        <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/boycenter.png" width="200"
+                                alt="소년중앙">
+                            <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/boycenter.png" width="200"
+                                    alt="소년중앙">
+                                <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/boycenter.png" width="200"
+                                        alt="소년중앙">
+                                    <a href=""><img src="http://hongduck710.cafe24.com/bookclover/img/boycenter.png"
+                                            width="200" alt="소년중앙">
+                </div>
             </li>
-           
-            
-            
-            
-            
-        </ul>
-</div>
-<div id="board">
-    <div class="notice">    
-        <h3>공지사항</h3>
-        <ul>
-            <li><a href="#none">계몽사 어린이 명작극장 재출간</a></li>
-            <li><a href="#none">웅진 비주얼 박물관 20% 할인 이벤트</a></li>
-     		<li><a href="#none">어린이 영어 뉴스텝 e북 출시</a></li>
+
+
+            <li>
+                <a href="#none" class="tab">tab4</a>
+                <div class="tabcon"></div>
+            </li>
+
+
+
+
+
         </ul>
     </div>
-    <div class="clReview">
-    	<a href="#none"><span>고객만족 리뷰</span><img src="http://hongduck710.cafe24.com/bookclover/img/review.png" 
-        alt="고객 만족 후기"></a>
-    </div>
-    <dl class="ARS">
-        <dt>전화 문의</dt>
-        <dt>02-1234-1234</dt>
+    <div id="board">
+        <div class="notice">
+            <h3>공지사항</h3>
+            <ul>
+                <li><a href="#none">계몽사 어린이 명작극장 재출간</a></li>
+                <li><a href="#none">웅진 비주얼 박물관 20% 할인 이벤트</a></li>
+                <li><a href="#none">어린이 영어 뉴스텝 e북 출시</a></li>
+            </ul>
+        </div>
+        <div class="clReview">
+            <a href="#none"><span>고객만족 리뷰</span><img src="http://hongduck710.cafe24.com/bookclover/img/review.png" alt="고객 만족 후기"></a>
+        </div>
+        <dl class="ARS">
+            <dt>전화 문의</dt>
+            <dt>02-1234-1234</dt>
             <dd>평일: 9:00~18:00</dd>
             <dd>토, 일, 공휴일 휴무</dd>
-        
-    </dl>
-   
-    <div class="clear"></div>        
-</div>
 
-<div id="map" class="container clear">
-    <h3>매장에서도 만나보실 수 있습니다.</h3>
-    <div class="mapwrap">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1118.2569584506732!2d126.92482918053906!3d37.55722388010321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1543819326216" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </dl>
+
+        <div class="clear"></div>
     </div>
-    <div class="direction">
-        <h6>오시는 길</h6>
-        <ul>
-            <li>지하철 이용시
-                <span>서울대입구역 5번출구 하차 → 직진</span>
-                
-            </li>
-            <li>자가용 이용시
-                <span>남부순환로에서 → 우회전 관악로에서 직진</span>
-           </li>
-            <li>버스 이용시
-                <span>
-                    1234번 버스 하차 → 직진<br>
-                    1234번 버스 하차 → 직진<br>
-                </span>
-            </li>
+
+    <div id="map" class="container clear">
+        <h3>매장에서도 만나보실 수 있습니다.</h3>
+        <div class="mapwrap">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1118.2569584506732!2d126.92482918053906!3d37.55722388010321!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sko!2skr!4v1543819326216"
+                width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <div class="direction">
+            <h6>오시는 길</h6>
+            <ul>
+                <li>지하철 이용시
+                    <span>서울대입구역 5번출구 하차 → 직진</span>
+
+                </li>
+                <li>자가용 이용시
+                    <span>남부순환로에서 → 우회전 관악로에서 직진</span>
+                </li>
+                <li>버스 이용시
+                    <span>
+                        1234번 버스 하차 → 직진<br>
+                        1234번 버스 하차 → 직진<br>
+                    </span>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="infowrap clear" style="width:100%; background-color:#DFFED4;">
+        <div id="infoBox" class="container clear">
+            <div class="about">
+                <h6>About</h6>
+                <p>북클로버는 어린 시절<br>
+                    우리들의 추억속에 남아 있었던<br>
+                    책들을 다시 출간해서 그 때의<br>
+                    감동을 원하는 분들을 위해<br>
+                    오픈했습니다.<br>
+                    부모님 세대에서 자녀 세대까지<br>
+                    볼 수 있는 추억의 교육 서적들을<br>
+                    북클로버에서 만나보실 수 <br>
+                    있습니다.
+                </p>
+            </div>
+            <form class="mailing">
+                <h6>정기구독 신청</h6>
+                <p>새로운 업데이트와 이벤트를 <br>이메일로 받아보세요</p>
+                <input type="text" placeholder="이메일 주소를 입력하세요.">
+                <p class="clear tac">
+                    <input type="submit" value="구독 신청">
+                </p>
+            </form>
+            <div class="appDownload">
+                <p>북클로버를 앱, 카카오프렌즈<br>에서도 만나보세요.</p>
+                <a href="#none"><img src="http://hongduck710.cafe24.com/Hotel-Shilla/img/playstore.png" alt="구글 플레이스토어"
+                        width="400"></a>
+                <a href="#none"><img src="http://hongduck710.cafe24.com/Hotel-Shilla/img/appstore.png" alt="앱스토어" width="400"></a>
+                <a href="#none"><img src="../bookclover/img/bookcloverfriends.jpg" alt="북클로버 카카오프렌즈" width="400"></a>
+            </div>
+            <div class="youtube">
+                <p>웅진 해피토크 <br>어린이 영어 비디오 보기</p>
+                <iframe max-width="1019" max-height="573" src="https://www.youtube.com/embed/tuMHYWJmpho" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <footer id="bt">
+
+        <div class="bottom1">
+            <h1><a href="http://hongduck710.cafe24.com/bookclover/bookclover.html"><img src="http://hongduck710.cafe24.com/bookclover/img/bookcloverlogo2.svg"
+                        alt="로고"></a></h1>
+
+            <ul id="bottomSNS">
+                <li><a href="https://ko-kr.facebook.com/">
+                        <img src="http://hongduck710.cafe24.com/bookclover/img/facebook.png" alt="페이스북" title="페이스북"></a></li>
+                <li><a href="https://www.instagram.com/">
+                        <img src="http://hongduck710.cafe24.com/bookclover/img/insta.png" alt="인스타그램" title="인스타그램"></a></li>
+                <li><a href="https://twitter.com/">
+                        <img src="http://hongduck710.cafe24.com/bookclover/img/twitter.png" alt="트위터" title="트위터"></a></li>
+                <li><a href="https://www.youtube.com/">
+                        <img src="http://hongduck710.cafe24.com/bookclover/img/youtube.png" alt="유튜브" title="유튜브"></a></li>
+            </ul>
+        </div>
+
+        <ul id="clause">
+            <li><a href="">북클로버 소개</a></li>
+            <li><a href="">고객센터</a></li>
+            <li><a href="">오시는 길</a></li>
+            <li><a href="">사이트맵</a></li>
         </ul>
-    </div>    
-</div>
+        <address>
+            <p>전화 02 222 2222 / 팩스 02 333 3333 / 이메일 hongik710@hanmail.net</p>
+            <p>주소 12345 ) 서울시 관악구 대학 15길 35</p>
+        </address>
 
-<div class="infowrap clear" style="width:100%; background-color:#DFFED4;">
-<div id="infoBox" class="container clear">
-    <div class="about">
-        <h6>About</h6>
-        <p>북클로버는 어린 시절<br> 
-           우리들의 추억속에 남아 있었던<br>
-           책들을 다시 출간해서 그 때의<br> 
-           감동을 원하는 분들을 위해<br> 
-           오픈했습니다.<br>
-           부모님 세대에서 자녀 세대까지<br>
-           볼 수 있는 추억의 교육 서적들을<br> 
-           북클로버에서 만나보실 수 <br>
-           있습니다. 
-        </p>
-    </div>
-    <form class="mailing">
-            <h6>정기구독 신청</h6>
-            <p>새로운 업데이트와 이벤트를 <br>이메일로 받아보세요</p>
-            <input type="text" placeholder="이메일 주소를 입력하세요.">
-            <p class="clear tac">
-                <input type="submit" value="구독 신청">
-            </p>
-    </form>
-    <div class="appDownload">
-        <p>북클로버를 앱, 카카오프렌즈<br>에서도 만나보세요.</p>
-        <a href="#none"><img src="http://hongduck710.cafe24.com/Hotel-Shilla/img/playstore.png"
-        alt="구글 플레이스토어" width="400"></a>
-        <a href="#none"><img src="http://hongduck710.cafe24.com/Hotel-Shilla/img/appstore.png"
-        alt="앱스토어" width="400"></a>
-        <a href="#none"><img src="../bookclover/img/bookcloverfriends.jpg"
-            alt="북클로버 카카오프렌즈" width="400"></a>
-    </div>  
-    <div class="youtube">
-        <p>웅진 해피토크 <br>어린이 영어 비디오 보기</p>
-        <iframe max-width="1019" max-height="573" src="https://www.youtube.com/embed/tuMHYWJmpho" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>        
-</div>
-</div>
+    </footer>
 
-<footer id="bt">
-
-  <div class="bottom1">
-    <h1><a href="http://hongduck710.cafe24.com/bookclover/bookclover.html"><img src="http://hongduck710.cafe24.com/bookclover/img/bookcloverlogo2.svg" alt="로고"></a></h1>
-    
-    <ul id="bottomSNS">
-       <li><a href="https://ko-kr.facebook.com/">
-       <img src="http://hongduck710.cafe24.com/bookclover/img/facebook.png" alt="페이스북" title="페이스북"></a></li>
-	   <li><a href="https://www.instagram.com/">
-       <img src="http://hongduck710.cafe24.com/bookclover/img/insta.png" alt="인스타그램" title="인스타그램"></a></li>
-	   <li><a href="https://twitter.com/">
-       <img src="http://hongduck710.cafe24.com/bookclover/img/twitter.png" alt="트위터" title="트위터"></a></li>
-	   <li><a href="https://www.youtube.com/">
-       <img src="http://hongduck710.cafe24.com/bookclover/img/youtube.png" alt="유튜브" title="유튜브"></a></li> 
-    </ul>
-  </div>
-
-  <ul id="clause">
-       <li><a href="">북클로버 소개</a></li>
-	   <li><a href="">고객센터</a></li>
-	   <li><a href="">오시는 길</a></li>
-	   <li><a href="">사이트맵</a></li>  
-  </ul>
-  <address>
-     <p>전화 02 222 2222 / 팩스 02 333 3333 / 이메일 hongik710@hanmail.net</p>
-     <p>주소 12345 ) 서울시 관악구 대학 15길 35</p>
-  </address>
-  
-</footer>
- 
 </body>
+
 </html>
