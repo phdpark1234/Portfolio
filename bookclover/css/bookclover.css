@@ -106,17 +106,21 @@ top:100%;}
 #sliderWrap ul{width:100000px; }
 #sliderWrap ul li{ float:left; position:relative; max-width:1920px; width:100%;background-image: linear-gradient(to right, #245ee2, #5cb5dc); height:600px; }
 #sliderWrap ul li a{display: block; }
-#sliderWrap ul li a img.slimg1{    display: block; }
+#sliderWrap ul li a img.slimg1{    display: block; position: absolute; top: 50%;left: 50%;
+transform: translate(-100%,-50%);}
 #sliderWrap ul li a img.slimg2{display: block; top: 50%; left: 50%;
-transform: translate(-700px,-50%); position:absolute;}
-#sliderWrap ul li a img.slimg3{ display:inline-block;}
+transform: translate(-114%,-50%); position:absolute;}
+#sliderWrap ul li a img.slimg3{ display:inline-block; position: absolute; top: 50%;left: 50%;
+transform: translate(-204%,-50%);}
+#sliderWrap ul li a img.slimg33{ display:inline-block; position: absolute; top: 50%;left: 50%;
+	transform: translate(-103%,-50%);}
 #sliderWrap ul li a img.slimg4{ position:absolute; display:block; top:50%; left:50%; transform:translate(-111%,-50%);}
 #sliderWrap ul li a img.slimg44{ position:absolute; display:block; top:50%; left:50%; transform:translate(-211%,-50%);}
 #sliderWrap ul li a img.slimg5{ position:absolute; display:block; left:7%;}
 #sliderWrap ul li a img{ }
-#sliderWrap ul li a span[class^='intro']{ position:absolute;top: 50%; left:50%; transform:translate(-50%,-50%);font-size:3vw; display:block; text-align:center;
-line-height:100px; font-weight:bold; color:white;text-shadow: 4px 2px black;}
-#sliderWrap ul li a span.intro1{ transform: translate(39%,-125%)}
+#sliderWrap ul li a span[class^='intro']{ position:absolute;top: 50%; left:50%; transform:translate(-50%,-50%);font-size:3rem; display:block; text-align:center;
+line-height:200%; font-weight:bold; color:white;text-shadow: 4px 2px black;}
+#sliderWrap ul li a span.intro1{ transform: translate(24%,-125%);}
  #sliderWrap ul li a span.intro2{  transform: translate(17%,-125%);  }
  #sliderWrap ul li a span.intro3{ transform:translate(38%,-124%);   }
   #sliderWrap ul li a span.intro4{transform: translate(8%,-124%); }
@@ -125,8 +129,8 @@ line-height:100px; font-weight:bold; color:white;text-shadow: 4px 2px black;}
 /*슬라이더 안에서 텍스트 위치이동 시킬경우 마진으로 하면 다른 곳에서 안보이는 수 있음. 그러므로 
 포지션 앱솔루트값 넣고 부모인 li에 relative를 넣은 다음  bottom,  left값을 주고 transform으로 위치이동*/
 #sliderWrap ul li a .Arrow { font-size:3em; color: white; position:relative; top:50%; left:50%; transform: translate(143%,194%); display:block; text-shadow: 3px 2px 3px black }
-#sliderWrap ul li a span.intro strong{ display:block;text-align:center;font-size:3vw; }
-#sliderWrap ul li a .DCbanner p{color: white; font-size:2.3vw; text-shadow: 2px 2px 2px black; }
+#sliderWrap ul li a span.intro strong{ display:block;text-align:center;font-size: 3rem; }
+#sliderWrap ul li a .DCbanner p{color: white; font-size:2.3rem; text-shadow: 2px 2px 2px black; }
 
 #btns{ position:absolute; height:0; top:50%; width:calc(100% - 10px); left:0; right:0; margin: auto; border:none
 ;}
@@ -138,9 +142,26 @@ line-height:100px; font-weight:bold; color:white;text-shadow: 4px 2px black;}
 @media (max-width: 786px) {
 	#sliderWrap{ max-width:786px; }	
 	#sliderWrap ul li{ max-width:786px; }	
-	#sliderWrap ul li a img.slimg2{ width: 400px; height: auto;transform: translate(-83%,-50%); }
-	#sliderWrap ul li a img.slimg3{ display:inline-block;width: 300px; height: auto; }
-	#sliderWrap ul li a img.slimg3.3{ display:inline-block;width: 300px; height: auto; }
+	#sliderWrap ul li a img.slimg1{ width: 400px; height: auto;
+    transform: translate(-86%,-50%);font-size: 1.5rem; }
+	#sliderWrap ul li a img.slimg2{width: 350px;height: auto;transform: translate(-96%,-50%); }
+	#sliderWrap ul li a img.slimg3{ display:inline-block;width: 200px; height: auto;transform: translate(-175%,-50%); }
+	#sliderWrap ul li a img.slimg33{ display:inline-block;width: 200px; height: auto;transform: translate(-74%,-50%); }
+	#sliderWrap ul li a img.slimg4{ display: inline-block;width: 200px;height: auto;
+		transform: translate(-111%,-100%);}
+	#sliderWrap ul li a img.slimg44{ display:inline-block;width: 200px; height: auto;transform: translate(-111%,0%);}
+
+	#sliderWrap ul li a img.slimg5{width: 350px; height: auto; transform: translate(-10%,50%);
+	}
+
+	#sliderWrap ul li a span.intro1{transform: translate(24%,-164%);font-size: 1.5rem;}
+	#sliderWrap ul li a span.intro2{transform: translate(14%,-164%);font-size: 1.3rem;}
+	#sliderWrap ul li a span.intro3{transform: translate(30%,-124%);font-size: 1.5rem;}
+
+	#sliderWrap ul li a span.intro4{transform: translate(9%,-162%);font-size: 1.2rem;}
+	#sliderWrap ul li a span.intro5{transform: translate(19%,-164%);font-size: 1.5rem;}
+	#sliderWrap ul li a .DCbanner{transform: translate(30%,-15%);padding: 22px 55px;}
+	#sliderWrap ul li a .DCbanner p{font-size: 1.3rem;}
 }
 @media (max-width:480px) {
 
