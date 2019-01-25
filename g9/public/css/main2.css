@@ -1,0 +1,77 @@
+@import "base.css";
+
+/*  공통 사항 */
+@media screen and (max-width:768px){
+	html, body{font-size: 14px;}
+}
+@media screen and (max-width:480px){
+	html, body{font-size: 12px;}	
+}
+@media screen and (max-width:320px){
+
+}
+
+@keyframes sizeUp{
+	0% {transform: scale(1);}
+	100% {transform: scale(1.2);}
+}
+@keyframes sizeDn{
+	0% {transform: scale(1.2);}
+	100%{ transform: scale(1);}
+}
+
+/* Header */
+header{width: 100%; position: fixed; box-shadow: 0 4px 4px rgba(0,0,0,.4); font-size: 1rem;
+background-color: #fff; z-index: 999; top: 0;}
+.logo{float: left; padding: 1rem;}
+.nav{cursor: pointer;}
+
+/* navigation PC */
+.navs{float: right;}
+.navs .nav{float: right; padding: 1rem;}
+
+/* navigation Mobile */
+.navs_mo{float: right; padding: 1rem; display: none;}
+.navs_mo_sub{height: 100%; background-color: rgba(0,0,0,.8); position: fixed; z-index: 1000; color: #fff;
+font-size: 1rem; display: none;}
+.navs_mo_sub > li{padding: 0.75rem; padding-right: 5em;}
+.navs_mo_sub > .nav_close{padding: 1.25em; padding-right: 5em;}
+.navs_mo_sub > .nav:hover{background-color: beige;
+color: #121212;}
+
+/* navigation Response */
+@media screen and (max-width:768px){
+	.navs{display: none;}
+	.navs_mo{display: block;}
+	.navs_mo_sub{display: block;}
+}
+
+/* banner PC */
+.banner{ position: relative; margin: 3rem auto 0 auto;overflow: hidden;}
+.banner_wrap{ position: relative; width: 100%;}
+.banner_wrap > li{width: 100%; position: absolute;}
+.banner_slogan{position: absolute; width: 90%;
+left: 5%; top: 50%; color: #fff; transform: translateY(-50%); font-size: 1rem;}
+.banner_slogan > h1{font-size: 4em; margin-bottom: 0.75em;}
+.banner_slogan > h4{font-size: 1.5em; margin-bottom: 1em;}
+.banner_slogan > button{font-size: 1em; padding: 1em;
+background-color: rgba(248, 248, 219, .7); 
+border: none; color: 121212;}
+.banner_slogan > button:hover{background-color:rgba(248, 248, 219, 1);}
+/* horizental only */
+.bt_banner{position: absolute; z-index: 11; top: 50%; transform: translateY(-50%); font-size: 3rem; opacity: 0.3;}
+.bt_banner:hover{opacity: 0.8;}
+#bt_prev{left: 5%;}
+#bt_next{right: 5%;}
+
+.social_link{ position: absolute; width: 100%;
+bottom: 3%; left: 5%; text-align: left; z-index: 10;}
+.social_link > li{ display: inline-block; color: #ccc; cursor: pointer;}
+.social_link > li:hover{color: #f1f1f1;}
+/* banner Response */
+@media screen and (max-width:768px){
+	.banner_slogan{font-size: 0.75rem;}
+}
+@media screen and (max-width:480px){
+	.banner_slogan{font-size: 0.5rem;}
+}
