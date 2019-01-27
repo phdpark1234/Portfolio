@@ -16,3 +16,18 @@ $(window).resize(function(){
 function banInit(){
 	$(".banner_wrap").height($(".banner_wrap > li").height());
 }
+
+//모바일 네비게이션
+$bar.click(navToggle);
+$bar2.click(navToggle);
+function navInit(){
+	navWid = $nav.width();
+	if($(window).width() > 768) navHide();
+}
+function navHide(){
+	$nav.css({"left":-navWid+"px"});
+}
+function navToggle(){
+	if($nav.positin().left == 0) $nav.stop().animate({"left": -navWid+"px"},500);
+	else $nav.stop().animate({"left":0}, 500);
+}
