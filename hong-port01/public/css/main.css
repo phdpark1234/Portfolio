@@ -23,12 +23,12 @@
 /* Header */
 header{width: 100%; position: fixed; box-shadow: 0 4px 4px rgba(0,0,0,.4); font-size: 1rem;
 background-color: #fff; z-index: 999; top: 0;}
-.logo{float: left; padding: 1rem;}
+.logo{float: left;  padding: 1rem 0 1rem 3rem;}
 .nav{cursor: pointer;}
 
 /* navigation PC */
-.navs{float: right;}
-.navs .nav{float: right; padding: 1rem;}
+.navs{float: right; padding: 1.25rem;}
+.navs .nav{float: right; padding: 1rem; font-size:1.2rem;}
 
 /* navigation Mobile */
 .navs_mo{float: right; padding: 1rem; display: none;}
@@ -40,6 +40,9 @@ font-size: 1rem; display: none;}
 color: #121212;}
 
 /* navigation Response */
+@media screen and (max-width:950px){
+	.navs .nav{font-size:1rem;}
+}
 @media screen and (max-width:768px){
 	.navs{display: none;}
 	.navs_mo{display: block;}
@@ -47,13 +50,13 @@ color: #121212;}
 }
 
 /* banner PC */
-.banner{ position: relative; margin: 3rem auto 0 auto;overflow: hidden;}
+.banner{ position: relative; margin: 2.5rem auto 0 auto;overflow: hidden;}
 .banner_wrap{ position: relative; width: 100%;}
 .banner_wrap > li{width: 100%; position: absolute;}
 .banner_slogan{position: absolute; width: 90%;
-left: 5%; top: 50%; color: #fff; transform: translateY(-50%); font-size: 1rem;}
+left: 12%; top: 50%; color: #222; transform: translateY(-50%); font-size: 1.25rem;}
 .banner_slogan > h1{font-size: 4em; margin-bottom: 0.75em;}
-.banner_slogan > h4{font-size: 1.5em; margin-bottom: 1em;}
+.banner_slogan > h4{font-size: 2.25em; margin-bottom: 1em;}
 .banner_slogan > button{font-size: 1em; padding: 1em;
 background-color: rgba(248, 248, 219, .7); 
 border: none; color: 121212;}
@@ -69,9 +72,38 @@ bottom: 3%; left: 5%; text-align: left; z-index: 10;}
 .social_link > li{ display: inline-block; color: #ccc; cursor: pointer;}
 .social_link > li:hover{color: #f1f1f1;}
 /* banner Response */
-@media screen and (max-width:768px){
-	.banner_slogan{font-size: 0.75rem;}
+
+@media screen and (max-width:1300px){
+	
+	.banner_slogan{font-size: 0.8rem;left: 5%;}
 }
-@media screen and (max-width:480px){
+@media screen and (max-width:768px){
+	.banner{margin: 5rem auto 0 auto;}
 	.banner_slogan{font-size: 0.5rem;}
 }
+@media screen and (max-width:480px){
+	.banner{margin: 6rem auto 0 auto;}
+	.banner_slogan{font-size: 0.4rem;}
+}
+
+/* company PC */
+.company{padding: 5rem 0; text-align: center;
+	background-color: #e1d6ff;}
+.company > h2{ font-weight: 300; letter-spacing: 3px;
+margin-bottom: 1rem;}
+.company > h4{font-weight: 300;}
+.company_features{max-width: 1400px; margin: auto;}
+.company_features > li{width: 33.333%; float: left; padding: 1%; margin-top: 3rem;}
+.company_feature{font-size: 1rem;}
+.company_feature > :nth-child(1){font-size: 4rem;}
+.company_feature > :nth-child(2){font-size: 1.25rem;
+line-height: 4rem; font-weight: bold;}
+.company_feature > :nth-child(3){line-height: 1.75em;}
+.company_feature > :nth-child(4){margin: 2.5rem 0;}
+/* company Response */
+/* @media screen and (max-width:768px) {
+	.company_features > li {width:100%}
+}
+@media screen and (max-width:480px) {
+	.company_features > li {width:100%}
+} */
