@@ -91,7 +91,7 @@ bottom: 3%; left: 5%; text-align: left; z-index: 10;}
 	background-color: #e1d6ff;}
 .company > h1{ font-weight: bold; letter-spacing: 3px;
 margin-bottom: 1rem; font-family: 'Yeon Sung', cursive;
-font-size: 2rem; color: #000000;}
+font-size: 3.5rem; color: #000000;}
 .company > h4{font-weight: 300;}
 .company_features{max-width: 1400px; margin: auto;}
 .company_features > li{width: 33.333%; float: left; padding: 1%; margin-top: 3rem; }
@@ -133,16 +133,21 @@ animation-fill-mode: forwards;}
 }
 /* Team PC */
 .team{padding: 5rem 0;text-align: center;}
-.team h2{ letter-spacing: 3px; margin-bottom: 1.5em; text-align: center;}
+.team h2{ letter-spacing: 3px; margin-bottom: 1.5em; text-align: center; font-size: 3rem;
+font-weight: 600;}
 .team > ul{max-width:1600px; margin: auto;}
 .member{width: 24%; margin: 0.5%; float: left; 
 box-shadow: 0 0 5px rgba(0,0,0,.3);}
 .member:hover{box-shadow: 0 0 30px rgba(0,0,0,.5);
 transform: scale(1.01);}
 .member > ul > li:first-child{overflow: hidden;}
-.member > ul > li:first-child > img{animation-name: sizeDn; animation-duration: 0.7s;
+.member > ul > li:first-child > a{display: block;height: 400px;
+width: 400px;}
+.member > ul > li:first-child > a > img{animation-name: sizeDn; animation-duration: 0.7s;
 animation-fill-mode:forwards;}
 
-
-
+.member > ul > li:not(:first-child){padding: 1rem;}
+.member > ul > li:nth-child(2){font-size: 1.75em;}
+.member > ul > li:nth-child(3){font-size: 1.125em; color:#666;}
+.member > ul > li:nth-child(4){line-height: 2em;}
 
