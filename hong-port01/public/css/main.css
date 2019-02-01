@@ -140,14 +140,23 @@ font-weight: 600;}
 box-shadow: 0 0 5px rgba(0,0,0,.3);}
 .member:hover{box-shadow: 0 0 30px rgba(0,0,0,.5);
 transform: scale(1.01);}
-.member > ul{height: 620px; overflow: hidden;}
+.member > ul{}
 .member > ul > li:first-child{overflow: hidden;}
 .member > ul > li:first-child > a{display: block;}
 .member > ul > li:first-child > a > img{animation-name: sizeDn; animation-duration: 0.7s;
 animation-fill-mode:forwards;}
-
 .member > ul > li:not(:first-child){padding: 1rem;}
 .member > ul > li:nth-child(2){font-size: 1.75em; line-height: 1em;}
 .member > ul > li:nth-child(3){font-size: 1.125em; color:#666;}
-.member > ul > li:nth-child(4){line-height: 2em;}
+.member > ul > li:nth-child(4){line-height: 1.5em;height: 150px; overflow: hidden;}
+.member > ul > li:nth-child(5) > button{width: 100%;}
 
+
+/* Team Response */
+@media screen and (max-width:768px){
+	.member{width: 48%; margin: 1%;}
+}
+@media screen and (max-width:480px){
+	.member{width: 96%;margin:2%;}
+	.member > ul > li:nth-child(4){font-size: 1.25em;}
+}
