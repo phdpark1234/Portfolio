@@ -160,3 +160,24 @@ animation-fill-mode:forwards;}
 	.member{width: 96%;margin:2%;}
 	.member > ul > li:nth-child(4){font-size: 1.25em;}
 }
+
+/* partner PC */
+.partner{background-color: #555; text-align: center;color: #f8f8f8;}
+.partner_wrap{max-width:1200px; margin: auto;}
+.partner_wrap > h2{padding: 1em;}
+.partner_wrap > ul {width: 100%;float: left; padding: 2%; font-size: 1rem;}
+
+.partner_wrap > ul > li{display: inline-block;}
+.partner_wrap > ul > li > img{}
+.partner_wrap > ul > li:first-child{font-size: 2em; line-height: 1.5em;}
+.partner_wrap > ul > li:last-child{font-size: 1em;}
+
+/* Partner PC */
+@media screen and (max-width:768px) {
+	.partner_wrap > ul {}
+}
+@media screen and (max-width:480px) {
+	.partner_wrap > :nth-child(3) > li > img{max-width: 100px;}
+}
+
+/*  */
