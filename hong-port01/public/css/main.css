@@ -1,6 +1,9 @@
 @import "base.css";
 
 /*  공통 사항 */
+@media screen and (max-width:1366px){
+	html, body {font-size:15px;}
+}
 @media screen and (max-width:768px){
 	html, body{font-size: 14px;}
 }
@@ -121,7 +124,7 @@ color: #ff7b35; font-size: 1.25rem; text-align: center;}
 .design h2{line-height: 2em; margin-bottom: 1.5em;}
 .design h2 strong{color: #000000;}
 
-.design iframe{max-width:544px; height:306px; width: 100%; }
+ 
 .design > :last-child{float: left; width: 50%;margin: 5%; }
 .design img{animation-name: sizeDn; animation-duration: 0.1s;
 animation-fill-mode: forwards;}
@@ -180,4 +183,5 @@ animation-fill-mode:forwards;}
 	.partner_wrap > :nth-child(3) > li > img{max-width: 100px;}
 }
 
-/*  */
+/* works PC */
+.works{padding:5rem 0;}
