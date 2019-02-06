@@ -43,7 +43,7 @@ $('.grid').imagesLoaded( function() {
 });
 
 /***** 다음 지도 *****/
-$(window).resize(function(){
+//$(window).resize(function(){
 
 	/* var container = document.getElementById('map');
 	var options = {
@@ -73,7 +73,7 @@ $(window).resize(function(){
 	});
 	clusterer.addMarker(marker); 
 	슬라이드를 먼저 만드는 중에 다음 지도로 인해 슬라이드가 돌지 않음*/ 
-}).trigger("resize");
+//}).trigger("resize");
 
 /***** bt_top *****/
 $("#bt_top").click(function(){

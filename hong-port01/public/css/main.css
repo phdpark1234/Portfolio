@@ -43,6 +43,7 @@ font-size: 1rem; display: none;}
 color: #121212;}
 
 /* navigation Response */
+
 @media screen and (max-width:950px){
 	.navs .nav{font-size:1rem;}
 }
@@ -75,11 +76,14 @@ bottom: 3%; left: 5%; text-align: left; z-index: 10;}
 .social_link > li{ display: inline-block; color: #ccc; cursor: pointer;}
 .social_link > li:hover{color: #f1f1f1;}
 /* banner Response */
+@media screen and (max-width:1366px){
+	.banner_slogan{font-size: 1rem;}
+}
 
-@media screen and (max-width:1300px){
+ @media screen and (max-width:1300px){
 	
 	.banner_slogan{font-size: 0.8rem;left: 5%;}
-}
+} 
 @media screen and (max-width:768px){
 	.banner{margin: 5rem auto 0 auto;}
 	.banner_slogan{font-size: 0.5rem;}
@@ -130,6 +134,9 @@ color: #ff7b35; font-size: 1.25rem; text-align: center;}
 animation-fill-mode: forwards;}
 .design img:hover{ animation-name: sizeUp;}
 /* Design Response */
+@media screen and (max-width:1366px){
+	.design h2{font-size: 1.25rem;}
+}
 @media screen and (max-width:768px) {
 	.design > :first-child {width:100%;}
 	.design > :last-child {width:100%;}
