@@ -357,3 +357,40 @@ function vertShow() {
         });
     }
 }
+
+//hover Animation
+$(".hov_ani").each(function(){
+    $(this).css({"position":"relative"});
+    $(this).append('<ul class="hov_mask" style="display:none"><li></li><li></li><li></li><li></li></ul>');
+    $(this).mouseenter(function(){
+        var speed = 250;
+        var $mask = $(this).children(".hov_mask");
+        $mask.fadeIn(speed);
+        $mask.children("li").eq(0).stop().animate({"width":$mask.width()-20+"px"}, speed);
+        $mask.children("li").eq(1).stop().animate({"width":$mask.width()-20+"px"}, speed);
+        $mask.children("li").eq(2).stop().animate({"height":$mask.height()-20+"px"}, speed);
+        $mask.children("li").eq(3).stop().animate({"height":$mask.height()-20+"px"}, speed);
+    });
+    $(this).mouseleave(function(){
+        var speed = 125;
+        var $mask = $(this).children(".hov_mask");
+        $mask.fadeOut(speed);
+        $mask.children("li").eq(0).stop().animate({"width":"50%"}, speed);
+        $mask.children("li").eq(1).stop().animate({"width":"50%"}, speed);
+        $mask.children("li").eq(2).stop().animate({"height":"50%"}, speed);
+        $mask.children("li").eq(3).stop().animate({"height":"50%"}, speed);
+    });
+});
+
+// .prds Ajax 연동
+new Ajax("../json/woman.json", prdInit);
+new Ajax("../json/man.json", prdInit);
+function prdInit(data){
+    var cate = data.cate;
+    var arr = [data.all.latest, data.all.top, data.all.best];
+    /* 
+    log("data => ", data);
+    log("data.wos => ", data.wos);
+    log("data.wos.latest => " data.wos.latest);
+    */
+}
