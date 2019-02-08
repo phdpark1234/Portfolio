@@ -129,9 +129,25 @@ background-color: #fff; border-radius: 19px;}
 .navs .in_search:focus{ outline: none;}
 .navs .fa-search{font-size: 1.25em; margin-right: 20px;}
 /* 카테고리 HOME */
+.nav:nth-child(1) > .nav_sub {width: 400px; padding: 1rem 0;}
+.nav:nth-child(1) > .nav_sub > li{float: left; width: 10rem; margin: 0.5rem 1rem; overflow: hidden;}
 /* 카테고리 SHOP */
+.nav:nth-child(2) > .nav_sub {width: 100%; padding: 2rem; left: 0;}
+.shop_cates > ul{width: 21%; margin: 0 2%; float: left; font-size: 0.75rem;}
+.shop_cate_tit {font-weight: bolder; color: #222; font-size: 1.25rem;}
+.shop_cate_name { margin: 0; line-height: 2rem; border-bottom: 1px solid #eee;}
+.shop_prds{margin-top: 2rem;}
+.shop_prd{width: 30%; float: left;}
+.shop_prd:nth-child(2){margin: 0 5%;}
 /* 카테고리 BLOG */
+.blogs{width: 100%; padding: 1rem; left: 0; color: #000;}
+.blogs > :first-child{width: 70%; float: left;}
+.blogs > :last-child{width: 30%; float: right;}
+.grid{display: flex; flex-wrap: wrap;}
+.grid-item{width: 50%; padding: 3%; float: left;}
 /* 카테고리 PORT */
+.nav:nth-child(4) > .nav_sub{padding: 1rem 0;}
+.nav:nth-child(4) > .nav_sub > li{width: 10rem; margin: 0.5rem 1rem;}
 
 
 /* 메인(좌측네비 및 배너) / mains */
@@ -143,3 +159,5 @@ background-color: #fff; border-radius: 19px;}
 .ban > li > div{position: absolute; top: 50%; left: 10%; font-size: 3rem;
 color: #fff; opacity: 0;}
 .ban > li > div:nth-child(2){top: 65%;}
+
+/*  */
