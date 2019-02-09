@@ -392,5 +392,140 @@ function prdInit(data){
     log("data => ", data);
     log("data.wos => ", data.wos);
     log("data.wos.latest => " data.wos.latest);
+    log("arr => ", arr);
+    log("arr[0] => ", arr[0]);
+    log("arr[0][0] => ", arr[0][0]);
     */
+  	var html = '';
+	var v;
+	for(var i in arr) {
+		html = '<ul class="clear">';
+		for(var j in arr[i]) {
+			v = arr[i][j];
+			html += '<li class="prds"><ul class="prd"><li>';
+			html += '<img src="'+v.img1+'" data-src="'+v.img2+'" class="img prd_img">';
+			if(v.hot ) html += '<div class="icon_hot">HOT</div>';
+			if(v.sale) html += '<div class="icon_sale">SALE</div>';
+			html += '<div class="prd_mask"></div>';
+			html += '<div class="icon_cart prd_icon aniset" data-over="bottomShow2" data-out="bottomHide2" data-speed="0.3s" data-delay="0">';
+			html += '<i class="fa fa-shopping-cart"></i></div>';
+			html += '<div class="icon_like prd_icon aniset" data-over="bottomShow2" data-out="bottomHide2" data-speed="0.3s" data-delay="0.2s"><i class="fa fa-heart-o"></i></div>';
+			html += '<div class="icon_search prd_icon aniset" data-over="bottomShow2" data-out="bottomHide2" data-speed="0.3s" data-delay="0.4s"><i class="fa fa-search"></i></div></li>';
+			html += '<li>'+v.tit+'</li>';
+			html += '<li>';
+			for(var k=1; k<=5; k++) {
+				if(k <= v.star) html += '<i class="fa fa-star"></i>';
+				else html += '<i class="fa fa-star-o"></i>'; 
+			}					
+			html += '</li><li><span>'+v.price+'</span></li>	</ul></li>';
+		}
+		html += '</ul>';
+		$("#"+cate).append(html);
+	}
+	// 모든 데이터가 DOM에 적용된 상태
+	$("#"+cate).imagesLoaded(function(){
+		$("#"+cate).find(".spinner").hide(0);
+		$(window).resize(function(){
+			$("#"+cate).height($("#"+cate).find("ul").eq(0).height());
+		}).trigger("resize");
+		$("#"+cate).find(".prd").mouseenter(prdHover);
+		$("#"+cate).find(".prd").mouseleave(prdLeave);
+		$("#"+cate).prev().find(".ghost_bt").eq(0).trigger("click");
+	});
+}
+
+// .prds 버튼 이벤트
+$(".ghost_bt").mouseenter(function(){
+    $(this).children("div").css({"transition":"transform 0.2s", "transform":"scale(1)"});
+});
+$(".ghost_bt").mouseleave(function(){
+    $(this).children("div").css({"transition":"transform 0.1s", "transform":"scale(0)"});
+});
+$(".ghost_bt").click(function(){
+    var $parent = $(this).parent().parent().parent();
+    $(".ghost_bt", $parent).css({"background-color":"", "color":"", "border":""});
+    $(this).css({"background-color":"#333", "color":"#fff", "border":"1px solid #333"});
+    var idx = $(this).index();
+    $parent.find(".prd_conts > ul").stop().animate({"margin-top":"50px", "opacity":0}, 300, function(){
+        $(this).css({"display":"none"});
+    });
+    $parent.find(".prd_conts > ul").eq(idx).css({"display":"block"}).stop().animate({"margin-top":0, "opacity":1}, 300);
+});
+
+// .prds 상품 애니메이션
+function prdHover(){
+    imgSwap($(this).find(".prd_img"));
+    var $mask = $(this).find(".prd_mask");
+    var $icon = $(this).find(".prd_icon");
+    $mask.stop().fadeIn(200);
+    $icon.each(function(){
+        var name = $(this).data("over");
+        var speed = $(this).data("speed");
+        var delay = $(this).data("delay");
+        aniInit($(this), name, speed, delay);
+    });
+}
+function prdLeave() {
+    imgSwap($(this).find(".prd_img"));
+    var $mask = $(this).find(".prd_mask");
+    var $icon = $(this).find(".prd_icon");
+    $mask.stop().fadeOut(200);
+    $icon.each(function(){
+        var name = $(this).data("out");
+        var speed = $(this).data("speed");
+        var delay = $(this).data("delay");
+        aniInit($(this), name, speed, delay);
+    });
+}
+function imgSwap(obj) {
+    var src = obj.attr("src");
+    var srcHover = obj.data("src");
+    obj.attr("src", srcHover);
+    obj.data("src", src);
+}
+function aniInit(obj, name, speed, delay) {
+    obj.css({"animation-fill-mode":"backwards"});
+    obj.css({
+        "animation-name": name,
+        "animation-duration": speed,
+        "animation-delay": delay,
+        "animation-fill-mode": "forwards"
+    });
+}
+
+// customer swipe
+var $slide = $(".c_slide");
+var $slides = $(".c_slide > li");
+var swNow = 0;
+var swPrev = 0;
+var swNext = 0;
+var swEnd = $slides.length - 1;
+$(".c_slide").swipe({
+    swipe: function(evt, dir, dist, dur, fingerCnt, fingerData){
+        if(dir == "left") {
+            if(swNow < swEnd) swNext = swNow + 1;
+            else swNext = 0;
+            $slides.eq(swNext).css({"left":"100%", "display":"block"});
+            $slide.stop().animate({"left":"-100%"}, 300, function(){
+                swNow = swNext;
+                swInit();
+            });
+        }
+        if(dir == "right") {
+            if(swNow == 0) swPrev = swEnd;
+            else swPrev = swNow - 1;
+            $slides.eq(swPrev).css({"left":"-100%", "display":"block"});
+            $slide.stop().animate({"left":"100%"}, 300, function(){
+                swNow = swPrev;
+                swInit();
+            });
+        }
+    },
+    threshold: 0
+});
+function swInit() {
+    $slide.css({"left":0});
+    $slides.eq(swNow).css({"left":0});
+    $slides.hide(0);
+    $slides.eq(swNow).show(0);
 }
