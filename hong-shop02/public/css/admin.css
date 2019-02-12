@@ -1,0 +1,5 @@
+@import "base.css";
+.wrap{max-width: 1400px; margin: auto;}
+.logo{float: left;}
+.logo_tit{float: left; font-size: 1.5rem; margin-left: 1rem; padding-top: 1rem;}
+.top_navs{width: 100%;}
