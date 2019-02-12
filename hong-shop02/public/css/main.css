@@ -236,3 +236,22 @@ ul.c_slide{position: relative;}
 
 /* brands */
 .brands > li {float: left; width: 16.66%; text-align: center; margin: 2rem 0;}
+
+/* links */
+.links{margin: 2rem 0.5%;}
+.links > li{width: 33%; float: left;}
+.links > li:nth-child(2){ margin: 0 0.5%;}
+
+/* footer / .footers */
+footer{background-color: #f8f8f8; padding: 3rem 0;}
+.footers > li{width: 25%; padding: 2%; float: left; font-size: 0.75rem; line-height: 2em;}
+.footer h5{padding:0.5rem 0; font-weight: bold;}
+
+.copys{margin: 3rem auto;}
+.copy{float: left; font-size: 0.75em; color: #aaa;}
+.payment{ float: right;}
+
+/* Top 버튼 /  .tops */
+.tops{width: 60px; height: 60px; border: 2px solid #ccc; border-radius: 50%; text-align: center; position: fixed; bottom: 2%; right: 2%; cursor: pointer; background-color: rgba(255,255,255, .3); z-index: 65535; display: none; }
+.tops > i{font-size: 1.5rem; line-height: 55px;}
+.tops > i:hover{color: #333;}

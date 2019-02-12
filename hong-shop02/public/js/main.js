@@ -529,3 +529,13 @@ function swInit() {
     $slides.hide(0);
     $slides.eq(swNow).show(0);
 }
+
+// TOP버튼
+$(window).scroll(function(){
+    var scTop = $("html, body").scrollTop();
+    if(scTop > 200) $(".tops").stop().fadeIn(1000);
+    else $(".tops").stop().fadeOut(1000);
+}).trigger("scroll");
+$(".tops").click(function(){
+    $("html, body").stop().animate({"scrollTop":0}, 500);
+});
