@@ -171,7 +171,17 @@ function homeAdd(data){
     else sel[1] = "selected";
     var html = `
     <div id="${data.id}">
-        <input type ="text">
+        <input type ="text" class-"w3-input w3-border w3-show-inline-block"
+        value="${data.val().title}">
+        <input type="text" class="w3-input w3-border w3-show-inline-block"
+        value="${data.val().link}">
+        <select class="w3-select w3-border w3-show-inline-block">
+            <option value="_blank" ${sel[0]}>새창</option>
+            <option value="_self" ${sel[1]}>현재창</option>
+        </select>
+        <button type="button" class="w3-indigo w3-button">수정</button>
+        <button type="button" class="w3-red w3-button">삭제</button>
     </div>`;
+    $("#home").append(html);
 }
 */
