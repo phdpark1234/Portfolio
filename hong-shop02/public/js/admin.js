@@ -20,7 +20,7 @@ w3.includeHTML(function(){
 
 //database = CRUD(Create/Read/Update/Delete)
 //firebase Init 
-const.log = console.log;
+const log = console.log;
 var config = {
     apiKey: "AIzaSyBB776Z4v6HhDXIUDk8D3hgVM87L4jnxmI",
     authDomain: "hong-shop01.firebaseapp.com",
@@ -66,4 +66,112 @@ function homeAdd(data){
     $("#homes").append(html);
 }
 // Home 데이터가 삭제되면 data변수에 삭제된 내용을 담아 실행한다.
-function homeRev(data)
+function homeRev(data){
+    $("#"+data.key).remove();
+}
+// Home 데이터가 수정되면 data 변수에 수정된 내용을 담아 실행한다.
+function homeChg(data){
+    $("#"+data.key).stop().animate({"opacity":0}, 300, function(){
+
+    });
+}
+//Firebase Callback 함수. 종료
+
+// home 저장 버튼을 눌렀을 때.
+$("#bt1_save").on("click", function(){
+    if($("#title1").val() == ""){
+        alert("제목 !!");
+        return;
+    }
+    if($("#link1").val() == ""){
+        alert("링크 !!");
+        return;
+    } 
+    //Firebase 추가 명령
+    ref[0].push({
+        title: $("#title1").val(),
+        link: $("#link1").val(),
+        target: $("#target1").val()
+    }).key;
+    $("#title1").val("");
+    $("#link1").val("");
+});
+//home 삭제버튼을 눌렀을 때
+function dataRev(obj){
+    if(confirm("정말로 삭제하시겠어요?")){
+        //Firebase 삭제 명령
+        db.ref("root/home/"+$(obj).parent().attr("id")).remove();
+    }
+}
+// home 수정버튼을 눌렀을 //#endregion
+function dataChg(obj){
+    var $li = $(obj).parent();
+    key = $li.attr("id");
+    console.log(key);
+    if($li.find(".home_title").val() == ""){
+        alert("제목 !!");
+        return;
+    }
+    if($li.find(".home_link").val() == ""){
+        alert("링크 !!");
+        return;
+    }
+    //Firebase 수정 명령
+    db.ref("root/home/"+key).update({
+        title: $li.find(".home_title").val(),
+        link: $li.find(".home_link").val(),
+        target: $li.find(".home_target").val()
+    });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//page1 / HOME
+/* 
+(function(){
+    ref = db.ref("root/home");
+    ref.on("child_added, homeAdd");
+}());
+$("#bt1_save").click(function(){
+    var $title = $("#title1");
+    var $link = $("#link1");
+    vaar $target = $("#target1");
+    if($title.val() == ""){
+        alert("제목을 입력하세요.");
+        return;
+    }
+    if($link.val() == ""){
+        alert("링크주소를 입력하세요.");
+        return;
+    }
+    ref.push({
+        title: $title.val(),
+        link: $link.val(),
+        target: $target.val()
+    }).key;
+    $title.val('');
+    $link.val('');
+});
+function homeAdd(data){
+    var sel = ['',''];
+    if(data.val().target == "_blank") sel[0] = "selected";
+    else sel[1] = "selected";
+    var html = `
+    <div id="${data.id}">
+        <input type ="text">
+    </div>`;
+}
+*/
