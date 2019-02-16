@@ -22,14 +22,15 @@ w3.includeHTML(function(){
 //firebase Init 
 const log = console.log;
 var config = {
-    apiKey: "AIzaSyBB776Z4v6HhDXIUDk8D3hgVM87L4jnxmI",
-    authDomain: "hong-shop01.firebaseapp.com",
-    databaseURL: "https://hong-shop01.firebaseio.com",
-    projectId: "hong-shop01",
-    storageBucket: "hong-shop01.appspot.com",
-    messagingSenderId: "250184950012"
-};
-firebase.initializeApp(config);
+    apiKey: "AIzaSyD3JSL5MPJe8P9A_jc4raBgfgoXU-M-kKo",
+    authDomain: "hong-shop02.firebaseapp.com",
+    databaseURL: "https://hong-shop02.firebaseio.com",
+    projectId: "hong-shop02",
+    storageBucket: "hong-shop02.appspot.com",
+    messagingSenderId: "872346986252"
+  };
+  firebase.initializeApp(config);
+
 
 //공통 변수
 var db = firebase.database();
