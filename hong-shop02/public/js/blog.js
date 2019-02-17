@@ -101,8 +101,29 @@ $("#mc_save").click(function(){
 $("#mc_sel").change(function(){
 
     $(this).children("option").each(function(){
-        var html = `
-        <input type>
-        `;
+        if($(this).val() == lastKey){
+            $(this).attr("selected", true);
+            var html = `
+            <input type="text" id="mc_chg" class="w3-input w3-border w3-show-inline-block"
+            value="${$(this).val()}">
+            <button class="w3-button w3-green mc_chg" oncick="mcChg(this);">수정</button>
+            <button class="w3-button w3-red mc_rev" onclick="mcRev(this);">삭제</button>
+            <div class="sc_ins">
+                <input type="text" id="sc_name" class="w3-input w3-border w3-show-inline-block" placeholder="서브카테고리 이름">
+                <input type="text" id="sc_link" class="w3-input w3-border w3-show-inline-block" placeholder="서브카테고리 링크">
+                <select id="sc_target" class="w3-select w3-border w3-show-inline-block">
+                    <option value="_blank">새창</option>
+                    <option value="_self">현재창</option>
+                </select>
+                <button class="w3-button w3-indigo" onclick="scAdd(this)">저장</button>
+            </div>
+            <ul id="blogs">
+            </ul>`;
+            $(".cont_wrap").empty().append(html);
+        }       
     });
+    $("#mc_chg").val(  $(this).children("option:selected").text()  );
+    db.ref("/root/blog/"+key+"/sub").off();
+    key = $(this).children("option:selected").val();
+    db.ref("root/blog/"+key+"/sub").on("child_added")
 });
