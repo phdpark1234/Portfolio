@@ -74,5 +74,35 @@ function mcRev(obj){
 function mcChg(obj){
     ley = $("#mc_sel option:selected").val();
     log(key);
-    var newTit = $(obj).prev().val()
+    var newTit = $(obj).prev().val();
+    if(newTit == ""){
+        alert("제목을 넣으세요.");
+        $(obj).prev().focus();
+        return;
+    }
+    db.ref("root/blog/"+key).update({
+        name: newTit
+    });
 }
+
+$("#mc_save").click(function(){
+    if($("#mc_in").val() == ""){
+        alert("메인 제목!!");
+        $("#mc_in").focus();
+        return;
+    }
+    ref = db.ref("/root/blog");
+    ref.push({
+        name: $("#mc_in").val()
+    }).key;
+    $("#mc_in").val("");
+});
+
+$("#mc_sel").change(function(){
+
+    $(this).children("option").each(function(){
+        var html = `
+        <input type>
+        `;
+    });
+});
