@@ -1,0 +1,59 @@
+{
+    "cates":[
+        {
+            "tit": "CATEGORY VIEW",
+            "data": [
+                {
+                    "name": "Grid View",
+                    "link": "../test/test.html",
+                    "target": "_self"
+                },
+                {
+                    "name": "List View",
+                    "link": "../test/test.html",
+                    "target": "_self"
+                },
+                {
+                    "name": "Left Sidebar",
+                    "link": "../test/test.html",
+                    "target": "_self"
+                },
+                {
+                    "name": "Right Sidebar",
+                    "link": "../test/test.html",
+                    "target": "_self"
+                },
+                {
+                    "name": "Without View",
+                    "link": "../test/test.html",
+                    "target": "_self"
+                }
+            ]
+        },
+        {
+            "tit": "PRODUCT VIEW",
+            "data": [
+                {
+                    "name": "Layout Zoom",
+                    "link": "../test/test.html",
+                    "target": "_self"
+                },
+                {
+                    "name": "Layout Scroll",
+                    "link": "../test/test.html",
+                    "target": "_self"
+                },
+                {
+                    "name": "Layout List",
+                    "link": "../test/test.html",
+                    "target": "_self"
+                },
+                {
+                    "name": "Layout List2",
+                    "link":"../test/test.html",
+                    "target":"_self"
+                }
+            ]            
+        }
+    ]
+}
