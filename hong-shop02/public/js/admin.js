@@ -28,8 +28,8 @@ var config = {
     projectId: "hong-shop02",
     storageBucket: "hong-shop02.appspot.com",
     messagingSenderId: "872346986252"
-  };
-  firebase.initializeApp(config);
+};
+firebase.initializeApp(config);
 
 // 공통 변수
 var db = firebase.database();	//firebase의 데이터베이스 객체
