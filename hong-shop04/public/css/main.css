@@ -1,0 +1,108 @@
+@import "base.css";
+/* 공통사항 */
+body{ min-height: 3000px;}
+.wrap{ width: 100%; max-width: 1170px; margin: auto; position: relative;}
+.modals{ position: fixed; z-index: 9999; display: none;}
+.rt_bg{ width: 100%; height: 100%; background-color: #000; top: 0; left: 0;}
+.rt_cont{width: 240px; height: 100%; background-color: #fff; text-align: center; top: 0; right: 0; font-size: 0.75rem;}
+.rt_cont > .fa-close{ font-size: 1.5em; padding: 3em 0 4em 0; cursor: pointer;}
+.mypages > li{ padding: 1em 0; cursor: pointer;}
+.mypages > li:hover{color: #222;}
+.country{ margin-top: 1.5em;}
+.country > span{width: 40px; height: 40px; line-height: 40px; margin: 4px 0; cursor: pointer;}
+.country > span:hover{background-color: rgb(104, 211, 119) !important;}
+.rt_arrow{transition: padding-left 0.2s; height: 2rem; line-height:2rem; border-bottom: 1px solid #ccc; cursor: pointer; font-size: 0.75rem; font-weight: 600;}
+.rt_arrow:hover{ padding-left: 20px;
+background: url(../img/arrow_right.png)no-repeat left center;}
+.rt_arrow a{ text-decoration: none;}
+.rt_arrow a:link{color:#666;}
+.rt_arrow a:visited{color:#666;}
+.rt_arrow a:hover{color: #333;}
+.rt_arrow a:active{color: #333;}
+.size_ani:hover{ transform: scale(1.1); transition: 1s;}
+.spinner{padding: 1rem; text-align: center; font-size: 3rem;}
+
+.cycle-pager{text-align: center; width: 100%; z-index: 9000; position: absolute; bottom: 10px; overflow: hidden;}
+.cycle-pager span{font-family: arial; font-size: 30px;
+display: inline-block; color: rgb(85, 85, 85); cursor: pointer;}
+.cycle-pager span.cycle-pager-active{color: rgb(244, 47, 100);}
+.cycle-pager > *{ cursor: pointer;}
+
+/* 애니메이션 키프레임 */
+.aiset{animation-fill-mode: forwards; animation-timing-function: ease-in-out;}
+@keyframes leftShow{
+    0% {transform: translateX(-200px); opacity: 0;}
+    100% {transform: translateX(0); opacity: 1;}
+}
+@keyframes leftHide{
+    0% {transform: translateX(0); opacity: 0;}
+    100% {transform: translateX(-200px); opacity: 0;}
+}
+@keyframes rightShow{
+    0%{transform: translateX(200px); opacity: 0;}
+    100%{transform: translateX(0); opacity: 1;}
+}
+@keyframes rightHide{
+    0%{transform: translateX(0); opacity: 1;}
+    100%{transform: translateX(200px); opacity: 0;}
+}
+@keyframes topShow{
+    0%{transform: translateY(-200px); opacity: 0;}
+    100%{transform: translateY(0); opacity: 1;}
+}
+@keyframes topHide{
+    0%{transform: translateY(0); opacity: 1;}
+    100%{transform: translateY(-200px); opacity: 0;}
+}
+@keyframes bottomShow{
+    0%{transform: translateY(200px); opacity: 0;}
+    100%{transform: translateY(0); opacity: 1;}
+}
+@keyframes bottomHide{
+    0%{transform: translateY(0); opacity: 1;}
+    100%{transform: translateY(200px); opacity: 0;}
+}
+@keyframes bottomShow2{
+    0%{transform: translateY(20px); opacity: 1;}
+    100%{transform: translateY(20px); opacity: 0;}
+}
+@keyframes scaleUp{
+    0%{transform: scale(1); opacity: 0;}
+    100%{transform: scale(1.05); opacity: 1;}
+}
+@keyframes scaleDn{
+    0%{transform: scale(1.05); opacity: 1;}
+    100%{transform: scale(1); opacity: 0;}
+}
+
+/* Hover set */
+.hov_mask{background-color: rgba(0,0,0,0.5); position: absolute; top: 0; left: 0; width: 100%; height: 100%;}
+.hov_mask > li{position: absolute;}
+.hov_mask > li:nth-child(1){width: 50%; border-top: 1px solid #fff; left: 50%; top: 10px; transform: translateX(-50%);}
+.hov_mask > li:nth-child(2){width: 50%; border-top: 1px solid #fff; left: 50%; bottom: 10px; transform: translateX(-50%);}
+.hov_mask > li:nth-child(3){height: 50%; border-left: 1px solid #fff; left: 50%; bottom: 10px; transform: translateX(-50%);}
+.hov_mask > li:nth-child(4){height: 50%; border-left: 1px solid #fff; right: 10px; top:50%; transform: translateY(-50%);}
+
+/* Ghost button set */
+.ghost_bt{ height: 2rem; border: 1px solid #333; border-radius: 1rem; position: relative; line-height: 2rem; text-align: center; color: #fff; font-size: 0.75em; padding: 0 1rem; cursor: pointer; margin: 0.5rem;}
+.ghost_bt:hover{ border: 1px solid #fff; color: #fff;}
+.ghost_bt > div{position: absolute; width: 100%; height: 100%; border-radius: 1rem; background-color: #333; top: 0; left: 0; transform: scale(0);}
+.ghost_bt >span{ position: relative; width: 100%; height: 100%;}
+
+/* 상단네비 / top_navs */
+.logo{ float: left;}
+.top_navs{ padding: 2rem 0;}
+.top_nav{float: right;}
+.top_nav > li{ float: left; margin-right: 3rem; font-size: 0.75rem; font-weight: 600; cursor: pointer;}
+.top_nav > li:nth-child(1){ line-height: 1.25rem;}
+.top_nav > li:nth-child(2){ line-height: 1.25rem;}
+.top_nav > li:nth-child(1) > img{ margin-right: 0.75rem; margin-top:0.25rem;}
+.top_nav > li:nth-child(2) > img{ margin-right: 0.75rem; margin-top:0.25rem;}
+.top_nav > li:nth-child(3){padding-top: 0.5rem; position: relative;}
+.top_nav > li:nth-child(3) > .w3-badge{ position: absolute; color: #666; padding: 0.25rem 0.5rem; top: -1rem;}
+.top_nav > li:nth-child(4){padding-top: 0.5rem; color: #222;}
+.top_nav .fa-shopping-bag{ font-size: 1.25rem; color: #222;}
+.top_nav .fa-bars{font-size: 1.25rem; color: #222;}
+
+/* 메인네비 / navs */
+.navs{width: 100%; background-color: #222; font-size: 0.75rem;}
