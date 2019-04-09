@@ -187,5 +187,141 @@ function fadeShow() {
         $(window).trigger("resize");
         $(".cycle-pager span").removeClass("cycle-pager-active");
         $(".cycle-pager span").eq(now).addClass("cycle-pager-active");
+        var hei = $slide.eq(now).height();
+        $(".bans").stop().animate({"height":hei+"px"}, speed);
+        $slide.eq(now).css({"z-index":depth++, "opacity":0}).stop().animate({"opacity":1}, speed, function(){
+            //여기는 애니메이션 완료된 직후
+            $slide.children("div").removeClass("aniset").css({
+                "animation-name":"none",
+                "animation-fill-mode":"backwards",
+            });
+            $(this).children("div").each(function(){
+                $(this).addClass("aniset");
+                $(this).css({
+                    "animation-name":$(this).data("ani"),
+                    "animation-delay":$(this).data("delay"),
+                    "animation-duration":$(this).data("speed"),
+                    "animation-fill-mode":"forwards"
+                });
+            });
+            if(now == end) now = 0;
+            else now++;
+        });
+    }
+}
+//horzShow();
+function horzShow() {
+    //맨 앞의 li를 복사해서 $(".ban")맨 뒤에 붙여라
+    $(".ban").append($(".ban > li").eq(0).clone());
+    var $wrap = $(".ban");
+    var $slide = $(".ban > li");
+    var now = 1;
+    var speed = 500;
+    var timeout = 3000;
+    var end = $slide.length - 1;
+    var interval;
+    var hei = 0;
+    //초기화
+    $(window).resize(function(){
+        hei = 0;
+        $slide.each(function(i){
+            //$(".ban > li")중 가장 큰 height 구함
+            if(hei < $(this).height()) hei = $(this).height();
+        });
+        $wrap.height(hei);
+    }).trigger("resize");
+    $slide.each(function(i){
+        $(this).css({"left":(i*100)+"%", "position":"absolute"});
+        if(i<end) $(".cycle-pager").append("<span>●</span>");
+    });
+    $(".cycle-pager span").click(function(){
+        now = $(this).index();
+        horzAni();
+        clearInterval(interval);
+        interval = setInterval(horzAni, timeout); 
+    });
+    interval = setInterval(horzAni, timeout);
+    function horzAni() {
+        if(now == end) pnow = 0;
+        else pnow = now;
+        $(".cycle-pager span").removeClass("cycle-pager-active");
+        $(".cycle-pager span").eq(pnow).addClass("cycle-pager-active");
+        $wrap.stop().animate({"left":(-now*100)+"%"}, speed, function(){
+            $(window).trigger("resize");
+            if(now == end) {
+                $wrap.css({"left":0});
+                now = 1;
+            }
+            else now++;
+        });
+    }
+}
+//ctmShow();
+function ctmShow() {
+    $(".c_slide").append($(".c_slide > li").eq(0).clone());
+    var $wrap = $(".c_slide");
+    var $slide = $(".c_slide > li");
+    var now = 1;
+    var speed = 500;
+    var timeout = 3000;
+    var end = $slide.length - 1;
+    var interval;
+    var hei = 0;
+    //초기화
+    $(window).resize(function(){
+        hei = 0;
+        $slide.each(function(i){
+            //$(".ban > li")중 가장 큰 height 구함
+            if(hei < $(this).height()) hei = $(this).height();    
+        });
+        $wrap.height(hei);
+    }).trigger("resize");
+    $slide.each(function(i){
+        $(this).css({"left":(i*100)+"%", "position":"absolute"});
+    });
+    interval = setInterval(horzAni, timeout);
+    function horzAni() {
+        if(now == end) pnow = 0;
+        else pnow = now;
+        $wrap.stop().animate({"left":(-now*100)+"%"}, speed, function(){
+            $(window).trigger("resize");
+            if(now == end) {
+                $wrap.css({"left":0});
+                now = 1;
+            }
+            else now++;
+        });
+    }
+}
+//vertShow();
+function vertShow() {
+    $(".ban").append($(".ban > li").eq(0).clone());
+    var $wrap = $(".ban");
+    var $slide = $(".ban > li");
+    var now = 1;
+    var speed = 500;
+    var timeout = 3000;
+    var end = $slide.length - 1;
+    var interval;
+    var hei = 1000;
+    //초기화
+    $slide.each(function(i){
+        if(i<end) $(".cycle-pager").append("<span>●</span>");
+    });
+    function vertAni() {
+        if(now == end) pnow = 0;
+        else pnow = now;
+        $(".cycle-pager span").removeClass("cycle-pager-active");
+        $(".cycle-pager span").eq(pnow).addClass("cycle-pager-active");
+        var top = $slide.eq(now).position().top;
+        var hei = $slide.eq(now).height();
+        $(".bans").stop().animate({"height":hei+"px"}, speed);
+        $wrap.stop().animate({"top":-top+"px"}, speed, function(){
+            if(now == end) {
+                $wrap.css({"top":0});
+                now = 1;
+            }
+            else now++;
+        });
     }
 }
