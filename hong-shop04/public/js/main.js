@@ -325,3 +325,17 @@ function vertShow() {
         });
     }
 }
+
+// hover Animation
+$(".hov_ani").each(function(){
+    $(this).css({"postion":"relative"});
+    $(this).append('<ul class="hov_mask" style="display:none"><li></li><li></li><li></li><li></li></li></ul>');
+    $(this).mouseenter(function(){
+        var speed = 250;
+        var $mask = $(this).children(".hov_mask");
+        $mask.fadeIn(speed);
+        $mask.children("li").eq(0).stop().animate({"width":$mask.width()-20+"px"}, speed);
+        $mask.children("li").eq(1).stop().animate({"width":$mask.width()-20+"px"}, speed);
+        $mask.children("li").eq(2).stop().animate({"height":$mask.height()-20+"px"}, speed);
+    });
+});
