@@ -153,6 +153,24 @@ $(".nav").mouseleave(function(){
     });
 });
 
+//rt_wings 이벤트
+$(".top_nav .fa-bars").click(function(){
+    var $bg = $(".rt_bg");
+    var $cont = $(".rt_cont");
+    $bg.css({"opacity":0, "display":"block"}).stop().animate({"opacity":.3}, 1000);
+    $cont.css({"display":"block", "right":"-240px"}).stop().animate({"right":0}, 1000); 
+});
+
+$(".rt_cont .fa-close").click(function(){
+    var $bg = $(".rt_bg");
+    var $cont = $(".rt_cont");
+    $bg.stop().animate({"opacity":0}, 800, function(){
+        $(this).css({"display":"none"});
+    });
+    $cont.stop().animate({"right":"-240px"}, 800, function(){
+        $(this).css({"display":"none"});
+    });
+});
 
 //메인배너 / .bans
 fadeShow();
